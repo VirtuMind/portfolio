@@ -88,3 +88,68 @@ nav {
 .logo:hover {
   cursor: default;
 }
+
+/* MENU TOGGLE */
+
+.open-menu {
+  font-size: 2rem;
+  margin: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.close-menu {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .nav-links {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color1);
+    transition: top 1s ease;
+    display: none;
+    color: var(--color2);
+  }
+  .nav-links .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+  }
+  .open-menu {
+    display: block;
+  }
+  .nav-links li a {
+    color: var(--color2);
+  }
+
+  .nav-links li a:hover {
+    color: var(--color2);
+  }
+
+  .nav-links a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color2);
+    transition: 0.2s ease-in;
+  }
+  
+  .nav-links a:hover::before {
+    width: 100%;
+  }
+}
