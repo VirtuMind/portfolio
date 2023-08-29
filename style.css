@@ -125,7 +125,6 @@ nav {
     position: absolute;
     top: 20px;
     right: 20px;
-    
   }
   .open-menu {
     display: block;
@@ -148,8 +147,157 @@ nav {
     background-color: var(--color2);
     transition: 0.2s ease-in;
   }
-  
+
   .nav-links a:hover::before {
     width: 100%;
   }
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.portrait-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  border-radius: 70px;
+}
+
+.portrait-container img {
+  border-radius: 80px;
+}
+
+.text {
+  align-self: center;
+  text-align: center;
+  display: inline-block;
+}
+
+.text p {
+  font-weight: 600;
+}
+
+.hallo {
+  text-align: center;
+}
+
+.fachinformatiker {
+  display: inline-block;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  border-right: 4px solid;
+  width: 69%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(16), cursor 0.4s step-end infinite alternate;
+}
+
+.name {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 2rem;
+}
+
+#download-icon {
+  height: 1.7rem;
+}
+
+.btn-contact,
+.btn-cv {
+  border: var(--color1) 0.1rem solid;
+}
+
+.btn-contact:hover,
+.btn-cv:hover {
+  cursor: pointer;
+  border: var(--color1) 0.1rem solid;
+}
+
+.btn-contact {
+  background: var(--color1);
+  color: white;
+}
+.btn-cv:hover {
+  background: var(--color2);
+  color: black;
+}
+
+.btn-contact:hover {
+  background: var(--color2);
+  color: black;
+}
+
+.btn-cv {
+  background: none;
+}
+
+.btn-container {
+  gap: 1rem;
 }
