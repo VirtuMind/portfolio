@@ -15,6 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
   --color1: #e69600;
   --color2: #ffdcbf;
+  --color3: #f3bf5d;
 }
 
 html {
@@ -41,19 +42,19 @@ a,
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px var(--color2); 
+  box-shadow: inset 0 0 5px var(--color2);
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--color1); 
+  background: var(--color1);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #f3bf5d; 
+  background: #f3bf5d;
 }
 
 /* Nav bar */
@@ -61,9 +62,42 @@ a,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 15vh;
+  height: 10.5vh;
   display: flex;
-  margin: auto;
+  position: sticky;
+  top: 0;
+  transition: background-color 0.4s ease-in-out;
+}
+
+/* Scrolling Effect */
+
+.scrolled {
+  background-color: var(--color3);
+  opacity: 1;
+  filter: drop-shadow(-13px 1px 10px #F19F3B);
+}
+
+.scrolled .nav-links a {
+  color: white;
+}
+
+.scrolled .nav-links a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: 0.2s ease-in;
+}
+
+.scrolled .nav-links a:hover::before {
+  width: 100%;
+}
+
+.scrolled .nav-links a:hover {
+  color: white;
 }
 
 /* Links */
@@ -73,6 +107,7 @@ nav {
   gap: 2rem;
   font-size: 1.5rem;
   display: flex;
+  transition: color 0.4s ease-in-out;
 }
 
 .nav-links a {
@@ -80,7 +115,6 @@ nav {
   position: relative;
   color: black;
   text-decoration: none;
-  /* text-decoration-color: white; */
 }
 
 .nav-links a:hover {
@@ -107,6 +141,11 @@ nav {
 .logo {
   font-size: 1.8rem;
   font-family: "Pacifico", cursive;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
 }
 
 .logo:hover {
@@ -180,9 +219,9 @@ nav {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  padding-top: 6vh;
+  height: 94vh;
+  margin: 0;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -190,6 +229,7 @@ section {
 .section-container {
   display: flex;
 }
+
 
 /* PROFILE SECTION */
 
@@ -208,7 +248,8 @@ section {
 }
 
 .portrait-container img {
-  border-radius: 80px;
+  border-radius: 100px;
+  /* filter: drop-shadow(-13px 1px 16px #F19F3B); */
 }
 
 .text-container {
@@ -216,7 +257,6 @@ section {
   text-align: center;
   display: inline-block;
 }
-
 
 .normal-text {
   text-align: center;
@@ -259,18 +299,16 @@ section {
   gap: 1rem;
 }
 
-/* About me Section */
+/* ABOUT ME SECTION */
 
-#about{
-  position: relative;
+#about {
   justify-content: center;
   align-items: center;
 }
 
-
-
 #about .header{
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 8.5vh;
 }
 
 /* .about-picture-container {
@@ -282,22 +320,20 @@ section {
   border-radius: 80px;
 } */
 
-
-.about-details-container{
+.about-details-container {
   justify-content: center;
   width: 75%;
   margin: auto;
-
 }
 
-.exp-edu-containers{
+.exp-edu-containers {
   display: flex;
   gap: 2rem;
   margin: 2rem;
   text-align: center;
 }
 
-.exp-edu-container{
+.exp-edu-container {
   padding: 1.2rem;
   flex: 1;
   background-color: white;
@@ -305,26 +341,17 @@ section {
   border: var(--color1) 0.1rem solid;
 }
 
-.about-details-container .text-container{
+.about-details-container .text-container {
   margin-left: 2rem;
   text-align: left;
 }
 
+/* SKILLS SECTION */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#skills .header{
+  margin-bottom: 1.5rem;
+  margin-top: 3vh;
+}
 
 /* ICONS */
 
@@ -332,11 +359,10 @@ section {
   height: 2rem;
 }
 
-.social-icons{
+.social-icons {
   cursor: pointer;
   height: 2rem;
 }
-
 
 /* BUTTONS */
 
@@ -393,5 +419,3 @@ section {
 .btn-container {
   gap: 1rem;
 }
-
-

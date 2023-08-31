@@ -22,3 +22,18 @@ function show(){
 function close(){
     navLinks.style.top = '-100%';
 }
+
+// Header effect upon scrolling
+
+document.addEventListener('scroll', () =>{
+    const nav = document.querySelector('nav');
+    if(window.scrollY > 0){
+        nav.classList.add('scrolled');
+    }
+    else{
+        nav.classList.remove('scrolled');
+    }
+
+
+})
+
