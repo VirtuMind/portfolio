@@ -16,6 +16,7 @@ body {
   --color1: #e69600;
   --color2: #ffdcbf;
   --color3: #f3bf5d;
+  --color4: rgb(85, 85, 85);
 }
 
 html {
@@ -23,7 +24,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--color4);
   font-weight: 500;
 }
 
@@ -231,6 +232,8 @@ section {
 }
 
 
+
+
 /* PROFILE SECTION */
 
 #profile {
@@ -258,11 +261,22 @@ section {
   display: inline-block;
 }
 
-.normal-text {
+
+.text-container .normal-text {
   text-align: center;
+  display: inline-block;
+  font-size: 1.5rem;
+  width: 69%;
 }
 
-.header2 {
+#wave{
+  height: 20px;
+  width: 20px;
+}
+
+
+#profile .text-container .header2 {
+  color: var(--color4);
   display: inline-block;
   font-size: 1.75rem;
   margin-bottom: 1rem;
@@ -304,6 +318,7 @@ section {
 #about {
   justify-content: center;
   align-items: center;
+  height: 90vh;
 }
 
 #about .header{
@@ -352,6 +367,52 @@ section {
   margin-bottom: 1.5rem;
   margin-top: 3vh;
 }
+
+.skill-sets-container{
+  width: 100%;
+  display: flex;
+  margin: 1rem 8rem;
+  gap: 12rem;
+  justify-content: center;
+}
+
+.personal-skill-set .header2, .technologies-skill-set .header2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--color4);
+}
+
+.technologies-skill-set .header2 {
+  text-align: center;
+}
+
+.skills-section-container{
+  display: flex;
+}
+
+.personal-skill-set article{
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.technologies-skill-set-container{
+  padding: 0 3rem;
+  display: flex;
+  gap: 8rem;
+  margin: 0;
+}
+
+.column{
+  float: left;
+  width: 33.33%;
+}
+.column p {
+  margin-bottom: 1rem;
+}
+
+
 
 /* ICONS */
 
