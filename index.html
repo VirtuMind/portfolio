@@ -1,215 +1,267 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Younes Khoubaz Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="favicon.png">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Younes Khoubaz Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    </head>
 </head>
-</head>
-
 <body>
-  <nav>
-    <div class="logo"><a href="#">Younes Khoubaz</a></div>
-    <div class="open-menu"><i class="fa fa-bars"></i></div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">Über mich</a></li>
-        <li><a href="#skills">Fähigkeiten</a></li>
-        <li><a href="#projects">Projekte</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-
-        <div class="close-menu"><i class="fa fa-times"></i></div>
-      </ul>
-    </div>
-  </nav>
-
-  <section id="profile">
-    <div class="portrait-container">
-      <img src="assets/portrait.png" alt="Younes Khoubaz profile picture" />
-    </div>
-    <div class="text-container">
-      <p class="normal-text">Hallo <img src="assets/waving-hand.png" alt="Wave emote" id="wave">, ich bin</p>
-      <h1 class="header">Younes Khoubaz</h1>
-
-      <h2 class="header2">Fachinformatiker</h2>
-
-      <div class="btn-container">
-        <button class="btn btn-cv" onclick="window.open('assets/Lebenslauf_Younes_Khoubaz.pdf')">
-          <div>
-            <img src="assets/resume.png" alt="Download icon" id="download-icon">
-          </div>
-          Lebenslauf herunterladen
-        </button>
-        <button class="btn btn-contact" onclick="location.href='#contact'">
-          Kontaktinformationen
-        </button>
-      </div>
-      <div id="socials-container">
-        <a href="https://www.linkedin.com/in/younes-khoubaz/" target="_blank"><img src="assets/linkedin.png"
-            alt="LinkedIn profile" class="social-icons" /></a>
-        <a href="https://github.com/younes-47" target="_blank"><img src="assets/github.png" alt="Github profile"
-            class="social-icons" /></a>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <h1 class="header">Über mich</h1>
-
-    <!-- <div class="about-picture-container">
+    <nav>
+        <div class="logo">
+            <a href="#">Younes Khoubaz</a>
+        </div>
+        <div class="open-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#about">Über mich</a>
+                </li>
+                <li>
+                    <a href="#skills">Fähigkeiten</a>
+                </li>
+                <li>
+                    <a href="#projects">Projekte</a>
+                </li>
+                <li>
+                    <a href="#contact">Kontakt</a>
+                </li>
+                <div class="close-menu">
+                    <i class="fa fa-times"></i>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="portrait-container">
+            <img src="assets/portrait.png" alt="Younes Khoubaz profile picture">
+        </div>
+        <div class="text-container">
+            <p class="normal-text">
+                Hallo
+                <img src="assets/waving-hand.png" alt="Wave emote" id="wave">
+                , ich bin
+            </p>
+            <h1 class="header">Younes Khoubaz</h1>
+            <h2 class="header2">Fachinformatiker</h2>
+            <div class="btn-container">
+                <button class="btn btn-cv" onclick="window.open('assets/Lebenslauf_Younes_Khoubaz.pdf')">
+                    <div>
+                        <img src="assets/resume.png" alt="Download icon" id="download-icon">
+                    </div>
+                    Lebenslauf herunterladen
+                </button>
+                <button class="btn btn-contact" onclick="location.href='#contact'">
+                    Kontaktinformationen
+                </button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/younes-khoubaz/" target="_blank">
+                    <img src="assets/linkedin.png" alt="LinkedIn profile" class="social-icons">
+                </a>
+                <a href="https://github.com/younes-47" target="_blank">
+                    <img src="assets/github.png" alt="Github profile" class="social-icons">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="header">Über mich</h1>
+        <!-- <div class="about-picture-container">
         <img src="assets/portrait2.jpg" alt="Younes Khoubaz Picture" class="about-picture">
       </div> -->
-    <div class="about-details-container">
-      <div class="exp-edu-containers">
-        <div class="exp-edu-container"> <!-- experience container -->
-          <img src="assets/experience.png" alt="Experience Icon" class="icon">
-          <h3>Erfahrung</h3>
-          <p>4 Monate Praktikum</p>
-          <p>Anwendungsentwecklung</p>
-        </div>
-        <div class="exp-edu-container"> <!-- education container -->
-          <img src="assets/education.png" alt="Education Icon" class="icon">
-          <h3>Ausbildung</h3>
-          <p>Hochschulabschluss der Technologie</p>
-          <p>Computertechnik</p>
-        </div>
-      </div>
-
-      <div class="text-container">
-        <p>
-          Ich bin ein hochqualifizierter und erfahrener IT-Entwickler mit Leidenschaft für die Entwicklung innovativer
+        <div class="about-details-container">
+            <div class="exp-edu-containers">
+                <div class="exp-edu-container">
+                    <!-- experience container -->
+                    <img src="assets/experience.png" alt="Experience Icon" class="icon">
+                    <h3>Erfahrung</h3>
+                    <p>4 Monate Praktikum</p>
+                    <p>Anwendungsentwecklung</p>
+                </div>
+                <div class="exp-edu-container">
+                    <!-- education container -->
+                    <img src="assets/education.png" alt="Education Icon" class="icon">
+                    <h3>Ausbildung</h3>
+                    <p>Hochschulabschluss der Technologie</p>
+                    <p>Computertechnik</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    Ich bin ein hochqualifizierter und erfahrener IT-Entwickler aus Kénitra Marokko, mit Leidenschaft für die Entwicklung innovativer
           und benutzerfreundlicher Software.
-          Ich habe ein solides Verständnis des Softwareentwicklung und bin in einer Vielzahl von Programmiersprachen und
+          Ich habe ein solides Verständnis des Softwareentwicklung und bin ich in einer Vielzahl von Programmiersprachen und
           Technologien versiert.
-          Ich bin auch ein Teamplayer und immer bereit, neue Dinge zu lernen. <br><br>
-          Ich bin ein schneller Lerner und immer bereit, neue Herausforderungen anzunehmen.
+          Ich bin auch ein Teamplayer und immer bereit, neue Dinge zu lernen.
+                    <br>
+                    <br>
+                    Ich bin ein schneller Lerner und immer bereit, neue Herausforderungen anzunehmen.
           Ich bin auch ein hochmotivierter und ergebnisorientierter Mensch.
           Ich bin zuversichtlich, dass ich einen bedeutenden Beitrag zu Ihrem Team leisten kann.
-
-        </p>
-      </div>
-    </div>
-
-
-  </section>
-
-  <section id="skills">
-    <h1 class="header">Fähigkeiten</h1>
-    <div class="skills-section-container">
-      <div class="skill-sets-container">
-        <div class="personal-skill-set">
-          <h3 class="header2">persönliche Fähigkeiten</h3>
-          <article>
-            <img src="assets/check-circle.png" alt="Check circle" class="icon">
-            <h3>Zuverlässigkeit</h3>
-          </article>
-          <article>
-            <img src="assets/check-circle.png" alt="Check circle" class="icon">
-            <h3>Teamfähigkeit</h3>
-          </article>
-          <article>
-            <img src="assets/check-circle.png" alt="Check circle" class="icon">
-            <h3>Lernbereitschaft</h3>
-          </article>
-          <article>
-            <img src="assets/check-circle.png" alt="Check circle" class="icon">
-            <h3>Zeitmanagement</h3>
-          </article>
-          <article>
-            <img src="assets/check-circle.png" alt="Check circle" class="icon">
-            <h3>Deutschkentnisse</h3>
-          </article>
-          <article>
-            <img src="assets/check-circle.png" alt="Check circle" class="icon">
-            <h3>Englischkentnisse</h3>
-          </article>
-        </div>
-
-        <div class="technologies-skill-set">
-          <h3 class="header2">Werkzeuge und Technologien</h3>
-          <div class="technologies-skill-set-container">
-            <div class="column">
-              <img src="assets/html.png" alt="HTML icon" class="icon"><br>
-              <p>HTML</p>
-              <img src="assets/php.png" alt="PHP icon" class="icon" id="php-img"><br>
-              <p>PHP</p>
-              <img src="assets/database.png" alt="DATABASE Icon" class="icon"><br>
-              <p>SQL</p>
-              <img src="assets/uml2.png" alt="UML Icon" class="icon"><br>
-              <p>UML</p>
+                </p>
             </div>
-            <div class="column">
-              <img src="assets/css.png" alt="CSS icon" class="icon"><br>
-              <p>CSS</p>
-              <img src="assets/laravel.png" alt="Laravel icon" class="icon"><br>
-              <p>Laravel</p>
-              <img src="assets/java.png" alt="JAVA Icon" class="icon"><br>
-              <p>Java</p>
-              <img src="assets/git.png" alt="git icon" class="icon"><br>
-              <p>Git</p>
-            </div>
-            <div class="column">
-              <img src="assets/js.png" alt="Javascript icon" class="icon">
-              <p>Javascript</p>
-              <img src="assets/bootstrap.png" alt="bootstrap icon" class="icon">
-              <p>Bootstrap</p>
-              <img src="assets/c++.png" alt="c++ icon" class="icon">
-              <p>C++</p>
-              <img src="assets/github.png" alt="github icon" class="icon">
-              <p>Github</p>
-            </div>
-
-
-
-          </div>
-
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h1 class="header">Projekte, die ich abgeschlossen habe</h1>
-    <div class="project-widget-container">
-      <div class="project-widget">
-        <div class="project-media-title">
-          <div class="widget-img-container">
-            <img src="assets/project.png" alt="">
-          </div>
-  
-          <h3>Project number 1 rvergerg ergergr ergegere</h3>
+    </section>
+    <section id="skills">
+        <h1 class="header">Fähigkeiten</h1>
+        <div class="skills-section-container">
+            <div class="skill-sets-container">
+                <div class="personal-skill-set">
+                    <h3 class="header2">persönliche Fähigkeiten</h3>
+                    <article>
+                        <img src="assets/check-circle.png" alt="Check circle" class="icon">
+                        <h3>Zuverlässigkeit</h3>
+                    </article>
+                    <article>
+                        <img src="assets/check-circle.png" alt="Check circle" class="icon">
+                        <h3>Teamfähigkeit</h3>
+                    </article>
+                    <article>
+                        <img src="assets/check-circle.png" alt="Check circle" class="icon">
+                        <h3>Lernbereitschaft</h3>
+                    </article>
+                    <article>
+                        <img src="assets/check-circle.png" alt="Check circle" class="icon">
+                        <h3>Zeitmanagement</h3>
+                    </article>
+                    <article>
+                        <img src="assets/check-circle.png" alt="Check circle" class="icon">
+                        <h3>Deutschkentnisse</h3>
+                    </article>
+                    <article>
+                        <img src="assets/check-circle.png" alt="Check circle" class="icon">
+                        <h3>Englischkentnisse</h3>
+                    </article>
+                </div>
+                <div class="technologies-skill-set">
+                    <h3 class="header2">Werkzeuge und Technologien</h3>
+                    <div class="technologies-skill-set-container">
+                        <div class="column">
+                            <img src="assets/html.png" alt="HTML icon" class="icon">
+                            <br>
+                            <p>HTML</p>
+                            <img
+                                src="assets/php.png"
+                                alt="PHP icon"
+                                class="icon"
+                                id="php-img"
+                            >
+                            <br>
+                            <p>PHP</p>
+                            <img src="assets/database.png" alt="DATABASE Icon" class="icon">
+                            <br>
+                            <p>SQL</p>
+                            <img src="assets/uml2.png" alt="UML Icon" class="icon">
+                            <br>
+                            <p>UML</p>
+                        </div>
+                        <div class="column">
+                            <img src="assets/css.png" alt="CSS icon" class="icon">
+                            <br>
+                            <p>CSS</p>
+                            <img src="assets/laravel.png" alt="Laravel icon" class="icon">
+                            <br>
+                            <p>Laravel</p>
+                            <img src="assets/java.png" alt="JAVA Icon" class="icon">
+                            <br>
+                            <p>Java</p>
+                            <img src="assets/git.png" alt="git icon" class="icon">
+                            <br>
+                            <p>Git</p>
+                        </div>
+                        <div class="column">
+                            <img src="assets/js.png" alt="Javascript icon" class="icon">
+                            <p>Javascript</p>
+                            <img src="assets/bootstrap.png" alt="bootstrap icon" class="icon">
+                            <p>Bootstrap</p>
+                            <img src="assets/c++.png" alt="c++ icon" class="icon">
+                            <p>C++</p>
+                            <img src="assets/github.png" alt="github icon" class="icon">
+                            <p>Github</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="project-details">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum suscipit laudantium nisi explicabo, fugiat
+    </section>
+    <section id="projects">
+        <h1 class="header">Projekte, die ich abgeschlossen habe</h1>
+        <div class="project-widget-container">
+            <div class="project-widget">
+                <div class="project-media-title">
+                    <div class="widget-img-container">
+                        <img src="assets/project.png" alt="">
+                    </div>
+                    <h3>Project number 1 rvergerg ergergr ergegere</h3>
+                </div>
+                <div class="project-details">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum suscipit laudantium nisi explicabo,
+            fugiat
             architecto odit? Commodi molestiae quisquam vero sed aliquam iusto enim ullam quidem deserunt modi nostrum
-            iure minus nemo, est ratione veritatis accusantium ea voluptate odit laudantium amet? Illum mollitia excepturi
-            placeat ea cupiditate. Ipsum, dicta dolor?</p>
-          <div class="links-container">
-            <div class="code-link-container">
-              <a href="" class="code-link"><img src="assets/coding2.png" alt="" class="icon"> Quellcode sehen</a>
+            iure minus nemo, est ratione veritatis accusantium ea voluptate odit laudantium amet? Illum mollitia
+            excepturi
+            placeat ea cupiditate. Ipsum, dicta dolor?
+                    </p>
+                    <div class="links-container">
+                        <div class="code-link-container">
+                            <a href="" class="code-link">
+                                <img src="assets/coding2.png" alt="" class="icon">
+                                Quellcode sehen
+                            </a>
+                        </div>
+                        <div class="details-link-container">
+                            <a href="" class="details-link">
+                                <img src="assets/arrow2.png" alt="" class="icon">
+                                Mehr Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="details-link-container">
-              <a href="" class="details-link"><img src="assets/arrow2.png" alt="" class="icon"> Mehr Details</a>
-            </div>
-          </div>
         </div>
-        
-      </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <h1 class="header">meine Kontaktinformationen</h1>
+            <h3 class="header2">ich würde mich freuen, von Ihnen zu hören!</h3>
+            <div class="contact-info-container">
+                <div class="email-container">
+                    <img src="assets/email.png" alt="Email Icon" class="icon">
+                    <a href="mailto:younes.khoubaz@gmail.com">
+                        <h3>younes.khoubaz@gmail.com</h3>
+                    </a>
+                </div>
+                <div class="linkedin-container">
+                    <img src="assets/linkedin-squared.png" alt="LinkedIn icon" class="icon">
+                    <a href="https://www.linkedin.com/in/younes-khoubaz/">
+                        <h3>linkedIn</h3>
+                    </a>
+                </div>
+                <div class="phone-container">
+                    <img src="assets/phone-call.png" alt="Phone icon" class="icon">
+                    <a href="tel:+212687749447">
+                        <h3>+212 687749447</h3>
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
 
-    </div>
 
+        <div class="copyright">
+            <p>Copyright © 2023 Younes Khoubaz. Alle Rechte vorbehalten.</p>
+        </div>
+    </section>
 
-
-  </section>
-
-
-  <script src="script.js"></script>
+   
+    <script src="script.js"></script>
 </body>
-
 </html>
