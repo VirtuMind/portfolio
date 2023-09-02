@@ -574,7 +574,6 @@ section {
   margin-top: 2rem;
   border-radius: 2rem;
   border: #e69600 0.1rem solid;
-  flex-direction: row;
 }
 
 .contact-info-container h3{
@@ -587,18 +586,24 @@ section {
   text-decoration: none;
 }
 
-.contact-info-container a::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: var(--color1);
-  transition: 0.2s ease-in;
+
+.underline-animation {
+  display: inline-block;
+  position: relative;
 }
 
-.contact-info-container a:hover::before {
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2.2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--color1);
+  transition: 0.3s ease-in;
+}
+
+.underline-animation:hover::after {
   width: 100%;
 }
 
