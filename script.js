@@ -20,7 +20,7 @@ function show(){
     navLinks.style.top = '0';
 }
 function close(){
-    navLinks.style.top = '-100%';
+    navLinks.style.top = '-1000%';
 }
 
 // Header effect upon scrolling
