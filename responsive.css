@@ -6,7 +6,7 @@ body {
   --color5: #f3f8f2; /* very light green shade */
 }
 
-/* For the nav menu toggle */
+
 
 @media (max-width: 1200px) {
   nav {
@@ -229,5 +229,46 @@ body {
 
   .copyright {
     margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 385px){    /* small mobile phones */
+
+  .exp-edu-container{
+    width: 90%;
+  }
+  .project-media-title .widget-img-container img{
+    height: 200px;
+    width: 200px;
+  }
+
+  .links-container{
+    display: block;
+  }
+
+  .code-link-container{
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .details-link-container{
+    justify-content: center;
+  }
+
+  #contact .contact-container .header{
+    font-size: 1.5em;
+  }
+  #contact .contact-container .header2{
+    font-size: 1em;
+  }
+
+  .contact-info-container{
+    width: 90%;
+  }
+  .contact-info-container h3{
+    font-size: 0.95em;
+  }
+  .copyright p {
+    font-size: 0.7em;
   }
 }

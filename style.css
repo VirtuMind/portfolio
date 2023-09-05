@@ -199,7 +199,7 @@ section {
 
 .portrait-container img {
   border-radius: 100px;
-  /* filter: drop-shadow(-13px 1px 16px #F19F3B); */
+  filter: drop-shadow(-13px 1px 16px #F19F3B);
 }
 
 .text-container {
@@ -383,7 +383,7 @@ section {
   margin-right: 12rem;
   margin-top: 5vh;
   margin-bottom: 3rem;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -400,7 +400,7 @@ section {
   border: var(--color3) 0.1rem solid;
   border-radius: 2rem;
   background-color: #f3f8f2;
-  /* filter: drop-shadow(3px 16px 16px #000); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .widget-img-container {
