@@ -23,7 +23,7 @@ function close(){
     navLinks.style.top = '-1000%';
 }
 
-// Header effect upon scrolling
+// Header effect upon scrolling - index page
 
 document.addEventListener('scroll', () =>{
     const nav = document.querySelector('nav');
@@ -37,3 +37,17 @@ document.addEventListener('scroll', () =>{
 
 })
 
+
+// Header effect upon scrolling - details page
+
+document.addEventListener('scroll', () =>{
+    const nav = document.querySelector('.details-page-header');
+    if(window.scrollY > 0){
+        nav.classList.add('details-page-header-scrolled');
+    }
+    else{
+        nav.classList.remove('details-page-header-scrolled');
+    }
+
+
+})

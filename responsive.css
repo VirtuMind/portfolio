@@ -232,6 +232,8 @@ body {
   }
 }
 
+
+
 @media (max-width: 385px){    /* small mobile phones */
 
   .exp-edu-container{
@@ -270,5 +272,20 @@ body {
   }
   .copyright p {
     font-size: 0.7em;
+  }
+}
+
+@media (max-width: 480px){
+  .links-container{
+    display: block;
+  }
+
+  .code-link-container{
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .details-link-container{
+    justify-content: center;
   }
 }

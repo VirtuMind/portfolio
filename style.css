@@ -73,7 +73,7 @@ nav {
   transition: background-color 0.4s ease-in-out;
 }
 
-/* Scrolling nav bar Effect */
+/* Scrolling nav bar Effect - index page*/
 
 .scrolled {
   background-color: var(--color3);
@@ -199,7 +199,7 @@ section {
 
 .portrait-container img {
   border-radius: 100px;
-  filter: drop-shadow(-13px 1px 16px #F19F3B);
+  filter: drop-shadow(-13px 1px 16px #f19f3b);
 }
 
 .text-container {
@@ -378,6 +378,7 @@ section {
   margin-top: 8vh;
 }
 
+
 .project-widget-container {
   margin-left: 12rem;
   margin-right: 12rem;
@@ -399,7 +400,7 @@ section {
   width: 90%;
   border: var(--color3) 0.1rem solid;
   border-radius: 2rem;
-  background-color: #f3f8f2;
+  background-color: var(--color5);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -446,7 +447,6 @@ section {
 }
 
 .details-link {
-  
   font-weight: 600;
   animation: wave-text 1.7s ease-in-out infinite; /* animated link text */
 }
@@ -664,4 +664,95 @@ section {
 
 .btn-container {
   gap: 1rem;
+}
+
+/* 
+
+------------------------------------------------- DETAILS PAGES STYLING -------------------------------------------------
+
+*/
+
+.details-page-header {
+  justify-content: space-around;
+  align-items: center;
+  height: 11vh;
+  display: flex;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  transition: none;
+  background-color: white;
+}
+
+.details-page-header a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+}
+
+.return-link .icon {
+  height: 1.5rem;
+}
+
+.external-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.external-links .icon {
+  height: 1.2rem;
+}
+
+.details-section{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.article{
+  padding-top: 10vh;
+  width: 40%;
+}
+
+.h{
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 2rem;
+}
+
+
+
+/* Scrolling nav bar Effect - details page*/
+
+.details-page-header-scrolled {
+  background-color: var(--color3);
+  opacity: 1;
+  filter: drop-shadow(-13px 1px 10px #f19f3b);
+}
+
+.details-page-header-scrolled .nav-links a {
+  color: white;
+}
+
+.details-page-header-scrolled .nav-links a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: 0.2s ease-in;
+}
+
+.details-page-header-scrolled .nav-links a:hover::before {
+  width: 100%;
+}
+
+.details-page-header-scrolled .nav-links a:hover {
+  color: white;
 }
