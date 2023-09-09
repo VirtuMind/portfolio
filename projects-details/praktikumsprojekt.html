@@ -36,9 +36,81 @@
     <div class="details-section">
         <article class="article">
             <h1 class="h">Management System Projekt</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam nisi voluptatum expedita cumque saepe eius consequuntur blanditiis facilis exercitationem dicta.</p>
-        </article>
-    </div>
-    <script src="../script.js"></script>
-</body>
+            <div class="section">
+                <h3 class="h2">Einführung</h3>
+                <p>
+                    Ich wurde als Praktikant damit beauftragt, eine Webanwendung zu entwickeln, die die Angestellten und die Ausrüstung in den verschiedenen Räumen des Berufungsgerichts verwaltet. Das Berufungsgericht hat große Schwierigkeiten, die dort arbeitenden Angestellten zu verwalten und die Materialien effizient auf die Räume zu verteilen.
+                </p>
+                <p>
+                    <br>
+                    Diese Anwendung wird der Verwaltung mehrere Dienste anbieten: Sie wird die Aufgabe vereinfachen, alle Mitarbeiter zu verwalten und ihre Bewegungen zwischen den Räumen zu verfolgen, sowie den Bestand der von der Regierung bereitgestellten Ausrüstung zu verwalten. Die Anwendung wird auch dazu beitragen, dass die Verwaltung Entscheidungen treffen kann, um die Arbeitsplätze gut zu verwalten.
+                </p>
+                <div class="message  message-warning">
+                    <p>
+                        voreingestellt Anmeldeinformationen:
+                        <br>
+                        Nutzername: admin
+                        <br>
+                        Passwort: admin
+                    </p>
+                </div>
+            </div>
+            <div class="section">
+                <h3 class="h2">Problematik</h3>
+                <p>
+                    Im Berufungsgericht findet die Verwaltung eine Schwierigkeit darin, die von der Regierung bereitgestellte Ausrüstung zu verwalten, ebenso wie die Mitarbeiter, die so oft ihren Arbeitsplatz (die Räume) wechseln. Dies macht es schwierig, jeden Mitarbeiter zu verfolgen, der mit einer bestimmten Aufgabe betraut ist und wie man zu ihm gelangt, außerdem sind die materiellen Ressourcen wie Computer, Drucker, Monitore ... ihre Menge auf jedem Schreibtisch und der Rest auf dem Lager.
+                </p>
+                <p>
+                    <br>
+                    Jeder Raum kann mehrere Mitarbeiter und mehrere Geräte enthalten, daher müssen wir eine Anwendung erstellen, die all dies verwaltet, um die Verwaltung der Personal- und Materialressourcen zu erleichtern.
+                </p>
+            </div>
+            <div class="section">
+                <h3 class="h2">Pflichtenheft</h3>
+                <ul>
+                    <li>Einen einzigen Benutzer haben, der die Kontrolle und den vollen Zugriff auf die Anwendung hat (Administrator).</li>
+                    <li>Der Administrator kann sich in voller Sicherheit authentifizieren, mit der Fähigkeit, das Passwort und den Benutzernamen zu ändern.</li>
+                    <li>Mitarbeiter können mit ihren notwendigen Informationen hinzugefügt werden, ebenso wie man sie löschen kann.</li>
+                    <li>Der Arbeitsraum eines jeden Mitarbeiters wird beim Hinzufügen des Mitarbeiters angegeben, was bedeutet, dass man keinen Mitarbeiter ohne Arbeitsraum haben kann.</li>
+                    <li>Alle Informationen über die Mitarbeiter können geändert werden.</li>
+                    <li>Die Anwendung speichert das Versetzungsdatum jedes Mal, wenn ein Mitarbeiter in einen anderen Raum versetzt wird, und berechnet die Zeit, die er dort verblieben ist.</li>
+                    <li>Das Löschen eines Mitarbeiters markiert nur, dass dieser Mitarbeiter gegangen ist. Die identifizierenden Informationen und der Transferverlauf über die Mitarbeiter bleiben im Archiv zugänglich.</li>
+                    <li>Ausrüstungen können mit Details, Typ, Modell und Menge hinzugefügt werden (das Detailfeld, in dem Informationen wie Konfiguration, Preis oder andere Notizen gespeichert werden, ist nicht obligatorisch).</li>
+                    <li>
+                        Ausrüstungen werden beim Hinzufügen automatisch im Lagerraum gespeichert, danach können sie zu den Räumen hinzugefügt we
+                        <li>Das Entfernen von Ausrüstungenn markiert nur, dass der Gegenstand entfernt wurde, und wird nicht in der Tabelle der Ausrüstungen angezeigt. Aber alle Informationen und die Menge, die zwischen den Räumen und dem Lager zirkuliert, bleiben im Archiv zugänglich.</li>
+                        <li>Die Anwendung muss den Archivbereich für Mitarbeiter und Ausrüstungen mit der Fähigkeit, sie wiederherzustellen, haben.</li>
+                        <li>Der Name und die Nummer sind bei der Erstellung eines Raums obligatorisch, man kann dann Ausrüstungen hinzufügen (optional).</li>
+                        <li>Man kann mehrere Ausrüstungen mit beliebiger Anzahl in einen Raum einfügen.</li>
+                        <li>Die Anwendung stellt sicher, dass die Menge, die man hinzufügen kann, ausreichend ist, wobei die Auswahl der Ausrüstungen in Abhängigkeit von den Ausrüstungenn, die sich bereits im Lager befinden, angezeigt wird.</li>
+                        <li>Die Anwendung verwaltet die Lagermenge dynamisch, wenn eine Menge einer Ausrüstung in einem Raum hinzugefügt/entfernt wird.</li>
+                        <li>Sie können den Namen und die Nummer des Raums sowie die Anzahl der Geräte, die sich bereits in dem Raum befinden, ändern und neue Geräte zu dem Raum hinzufügen, wenn sie geändert werden.</li>
+                        <li>Die Anwendung muss sicherstellen, dass der Raum leer von Mitarbeitern und Geräten ist, bevor sie ihn löscht.</li>
+                        <li>Die Navigation der Anwendung sollte einfach und intuitiv sein.</li>
+                        <li>Die Anwendung sollte in jedem Abschnitt eine Suchfunktion enthalten, die dabei hilft, Datensätze auf der Grundlage beliebiger bereitgestellter Informationen zu finden.</li>
+                        <li>Tabellen müssen indiziert sein, mit der Funktionalität, sie nach Spalten zu ordnen.</li>
+                        <li>Die Anwendung muss mit Sonderfällen umgehen, bei denen Fehler auftreten können.</li>
+                        <li class="last-li">Wenn ein Fehler auftritt, muss die Anwendung eine Meldung anzeigen, die den Fehlertyp enthält.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3 class="h2">Klassendiagramm des Projekts</h3>
+                    <img src="../assets/Abschlussprojekt/Klassendiagramm des Projekts.png" alt="Class Diagram">
+                </div>
+                <div class="section">
+                    <div class="mini-section">
+                        <h3 class="h2">Die Hauptseiten der Anwendung</h3>
+                        <h4 class="h3">Anmeldeseite (Authentifizierung)</h4>
+                        <img src="../assets/Abschlussprojekt/1.jpeg" alt="Login page">
+                        <p>Die Anmeldeseite enthält eine Box mit Einträgen für den Benutzernamen und das Passwort, das Logo des Justizministeriums und einen Titel, der die Hauptfunktionalität der Anwendung darstellt, um sie zu unterscheiden, da es andere Anwendungen gibt, die für andere Interessen verwendet werden, die auf dem lokalen Server des Berufungsgerichts gehostet werden.</p>
+                        
+                    </div>
+                    <div class="mini-section">
+                        <h4 class="h3">Seite der Räume</h4>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <script src="../script.js"></script>
+    </body>
 </html>
