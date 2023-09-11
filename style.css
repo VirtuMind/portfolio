@@ -18,6 +18,7 @@ body {
   --color3: #f3bf5d;
   --color4: rgb(85, 85, 85);
   --color5: #f3f8f2; /* very light green shade */
+  --color6: #f19f3b;
 }
 
 html {
@@ -57,7 +58,7 @@ a,
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #f3bf5d;
+  background: var(--color3);
 }
 
 /* Nav bar */
@@ -300,7 +301,8 @@ section {
   background-color: white;
   border-radius: 3rem;
   /* border: var(--color1) 0.1rem solid; */
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 1, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 1, 0.2) 0px -3px 0px inset;
 }
 
 .about-details-container .text-container {
@@ -379,7 +381,6 @@ section {
   margin-top: 8vh;
 }
 
-
 .project-widget-container {
   margin-left: 12rem;
   margin-right: 12rem;
@@ -399,10 +400,15 @@ section {
   padding: 2rem;
   gap: 3rem;
   width: 90%;
-  border: var(--color3) 0.1rem solid;
+  /* border: var(--color1) 0.09rem solid; */
   border-radius: 2rem;
   background-color: var(--color5);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  /* Simple shadow */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
 }
 
 .widget-img-container {
@@ -411,10 +417,17 @@ section {
 }
 
 .project-media-title .widget-img-container img {
-  border-radius: 2rem;
+  border-radius: 0.2rem;
   height: 300px;
   width: 300px;
   align-items: center;
+  color: #f3bf5d;
+  color: #ffdcbf;
+  /* orange shading effect for box shadow */
+  /* box-shadow: #ebab33 -5px 5px, #eeb64d -10px 10px, #f3cb80 -15px 15px, #f8e0b3 -20px 20px, #fdf5e6 -25px 25px;  */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
 .project-media-title h3 {
@@ -642,21 +655,13 @@ section {
 .btn-contact:hover,
 .btn-cv:hover {
   cursor: pointer;
-  border: var(--color1) 0.1rem solid;
+  background: var(--color3);
+  color: black;
 }
 
 .btn-contact {
   background: var(--color1);
   color: white;
-}
-.btn-cv:hover {
-  background: var(--color2);
-  color: black;
-}
-
-.btn-contact:hover {
-  background: var(--color2);
-  color: black;
 }
 
 .btn-cv {
@@ -704,7 +709,7 @@ section {
   height: 1.2rem;
 }
 
-.details-section{
+.details-section {
   margin: 0;
   padding: 0;
   display: flex;
@@ -714,18 +719,18 @@ section {
   justify-content: center;
 }
 
-.article{
+.article {
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  /* padding-bottom: 10vh; */
   width: 40%;
 }
 
-.section{
-margin-bottom: 2rem;
+.section {
+  margin-bottom: 2rem;
 }
 
-.mini-section{
-  margin-bottom: 1rem;
+.mini-section {
+  /* margin-bottom: 1rem; */
 }
 
 .message {
@@ -736,10 +741,10 @@ margin-bottom: 2rem;
   position: relative;
   line-height: 1.5;
   margin-top: 1rem;
-  
+
   &:before {
     color: white;
-    width:  1.5em;
+    width: 1.5em;
     height: 1.5em;
     position: absolute;
     top: 1em;
@@ -750,33 +755,34 @@ margin-bottom: 2rem;
     line-height: 1.5;
     text-align: center;
   }
-  
-
 }
-
 
 .message-warning {
   border-left-color: var(--color1);
-  
+
   &:before {
     background-color: var(--color1);
     content: "!";
   }
 }
 
-.h{
+.p2{
+  margin-top: 12px; /* for spacing */
+}
+
+.h {
   text-align: center;
   font-size: xx-large;
   margin-bottom: 2rem;
   /* color: var(--color1); */
 }
 
-.h2{
+.h2 {
   margin-bottom: 0.6rem;
   font-size: x-large;
 }
 
-.h3{
+.h3 {
   color: var(--color4);
   margin-left: 2rem;
   margin-bottom: 0.6rem;
@@ -784,25 +790,30 @@ margin-bottom: 2rem;
   text-decoration: underline;
 }
 
-.section ul{
+.section ul {
   padding-left: 3rem;
 }
 
 .section ul li {
-  list-style-type: '👉';
+  list-style-type: "👉";
   padding-inline-start: 1ch;
   font-weight: 500;
   margin-bottom: 12px; /* for spacing */
 }
 
-.section .last-li{
+.section .last-li {
   margin-bottom: 0;
 }
 
-.section img{
-  max-width:100%;
+.section img {
+  max-width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.danke{
+  text-align: center;
+  font-size: 1.2em;
 }
 
 /* Scrolling nav bar Effect - details page*/
