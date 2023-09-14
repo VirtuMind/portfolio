@@ -740,7 +740,8 @@ section {
   border-radius: 3px;
   position: relative;
   line-height: 1.5;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
 
   &:before {
     color: white;
@@ -759,12 +760,43 @@ section {
 
 .message-warning {
   border-left-color: var(--color1);
+  background-color: #fff0d7;
 
   &:before {
     background-color: var(--color1);
-    content: "!";
   }
 }
+
+.message-title{
+  display: flex;
+  gap: 0.5rem;
+}
+.message-title h3{
+  color: var(--color1);
+}
+.message-title{
+  margin-bottom: 1rem;
+}
+
+.article .message-title img{
+  height: 28px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.article .message ul{
+  margin-left: 45px;
+  padding-left: 0px;
+}
+.article .message ul li{
+  /* list-style-type: "🟠"; */
+  list-style-image: url(assets/bullet.png);
+  padding-inline-start: 1ch;
+  font-weight: 500;
+  margin-bottom: 12px; /* for spacing */
+}
+
+
 
 .p2{
   margin-top: 12px; /* for spacing */
@@ -801,6 +833,9 @@ section {
   margin-bottom: 12px; /* for spacing */
 }
 
+
+
+
 .section .last-li {
   margin-bottom: 0;
 }
@@ -815,6 +850,14 @@ section {
   text-align: center;
   font-size: 1.2em;
 }
+
+
+
+
+
+
+
+
 
 /* Scrolling nav bar Effect - details page*/
 
