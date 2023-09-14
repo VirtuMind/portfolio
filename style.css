@@ -827,7 +827,7 @@ section {
 }
 
 .section ul li {
-  list-style-type: "👉";
+  list-style-type: "🔸";
   padding-inline-start: 1ch;
   font-weight: 500;
   margin-bottom: 12px; /* for spacing */
