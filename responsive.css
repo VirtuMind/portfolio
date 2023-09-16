@@ -32,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--color1);
-    transition: top 1s ease;
+    transition: top 0.7s ease-in-out;
     display: none;
     color: var(--color2);
   }
@@ -258,7 +258,7 @@ body {
   }
 
   #contact .contact-container .header{
-    font-size: 1.5em;
+    font-size: 1.35em;
   }
   #contact .contact-container .header2{
     font-size: 1em;
