@@ -304,6 +304,12 @@ body {
   .article{
     width: 65%;
   }
+  .details-page-header{
+    display: none;
+  }
+  .hamburger-nav{
+    display: flex;
+  }
 }
 @media (max-width: 480px){
   .article{

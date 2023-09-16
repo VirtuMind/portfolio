@@ -1,4 +1,4 @@
-// MENU TOGGLE FUNCTION
+// MENU TOGGLE FUNCTION FOR THE MAIN PAGE
 const navLinks = document.querySelector('.nav-links');
 const closeMenu = document.querySelector('.close-menu');
 const openMenu = document.querySelector('.open-menu');
@@ -22,6 +22,19 @@ function show(){
 function close(){
     navLinks.style.top = '-1000%';
 }
+
+
+// MENU TOGGLE FUNCTION FOR THE DETAILS PAGES
+function toggleHamburgerMenu(){
+    const menu = document.querySelector(".hamburger-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
+
+
+
+
 
 // Header effect upon scrolling - index page
 
