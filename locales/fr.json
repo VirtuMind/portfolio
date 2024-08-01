@@ -1,3 +1,27 @@
 {
-  "welcome": "Commencez ici"
+  "aboutMe": "À propos",
+  "contact": "Contact",
+  "skills": "Compétences",
+  "projects": "Projets",
+  "hello": "Bonjour",
+  "title": "Développeur Fullstack",
+  "iam": "Je suis",
+  "downloadCV": "Télécharger CV",
+  "contactInfo": "Coordonnées",
+  "aboutParagraph": "Je suis un développeur Full Stack de Kénitra, Maroc. J'ai de l'expérience dans le développement d'applications innovantes et conviviales. J'ai développé avec succès divers projets allant des applications administratives aux plateformes centrées sur l'utilisateur. Avec une solide compréhension du développement de logiciels, je suis toujours prêt à apprendre de nouvelles technologies et à élargir mon ensemble de compétences. Ma passion pour la création de solutions efficaces me pousse à relever les défis techniques.",
+  "myContactInfo": "Mes coordonnées",
+  "hearingFromYou": "Connectons-nous !",
+  "completedProjects": "Projets terminés",
+  "courtProject": {
+    "title": "Système de gestion",
+    "description1": "Dans mon précédent rôle en tant que stagiaire au sein du département informatique de",
+    "description2": "la Cour d'Appel de Kénitra",
+    "description3": ", j'ai été chargé de développer et de lancer une nouvelle application web déployée sur le réseau local de la cour, gérant les ressources humaines et matériels fournis par le gouvernement pour augmenter l'efficacité du flux de travail et aider à la prise de décision."
+  },
+  "thesesPlatformProject": {
+    "title": "Plateforme de gestion des projets de fin d'études",
+    "description1": "Pour mon projet de fin d'études, j'ai développé une application full-stack. Une plateforme qui gère les projets de fin d'études des étudiants de",
+    "description2": "l'Ecole Supérieur de Technologie",
+    "description3": "avec une authentification utilisateur et un système de permissions multiples, où l'administrateur, les professeurs et les étudiants peuvent se connecter et accéder à des informations importantes ainsi qu'effectuer diverses tâches."
+  }
 }

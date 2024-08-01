@@ -1,3 +1,27 @@
 {
-  "welcome": "Start here"
+  "aboutMe": "About me",
+  "contact": "Contact",
+  "skills": "Skills",
+  "projects": "Projects",
+  "hello": "Hello",
+  "title": "Fullstack Developer",
+  "iam": "I am",
+  "downloadCV": "Download Resume",
+  "contactInfo": "Contact Information",
+  "aboutParagraph": "I am a Full Stack Developer from Kénitra, Morocco. With experience in developing innovative and user-friendly applications. I have successfully developed diverse projects ranging from administrative applications to user-centric platforms. With a solid understanding of software development, I am always willing to learn new technologies and expand my skill set. My passion for creating impactful solutions drives my commitment to overcome technical challenges.",
+  "myContactInfo": "My Contact Information",
+  "hearingFromYou": "I look forward to hearing from you!",
+  "completedProjects": "Completed Projects",
+  "courtProject": {
+    "title": "Management System",
+    "description1": "In my previous role as an intern in the IT department of",
+    "description2": "the Court of Appeal in Kénitra",
+    "description3": ", I was tasked with developing and launching a new web application deployed on the court's local network, managing the human resources and office equipment provided by the government to increase efficiency in workflow and assist in decision making."
+  },
+  "thesesPlatformProject": {
+    "title": "Graduation Projects Management Platform",
+    "description1": "For my graduation project, I developed a full-stack application. A platform that manages graduation projects of students of",
+    "description2": "Ecole Supérieur de Technologie",
+    "description3": "with user authentication and multiple permissions system, where the administrator, professors, and students can log in and access important information as well as perform various tasks."
+  }
 }
