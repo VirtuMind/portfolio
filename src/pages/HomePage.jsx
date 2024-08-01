@@ -1,24 +1,27 @@
 import { useTranslation } from 'react-i18next';
-import checkCircle from './../../assets/check-circle.png';
 import htmlIcon from './../../assets/skills-icons/html.png';
 import phpIcon from './../../assets/skills-icons/php.png';
-import databaseIcon from './../../assets/skills-icons/database.png';
-import umlIcon from './../../assets/skills-icons/uml2.png';
+import umlIcon from './../../assets/skills-icons/uml2.svg';
 import cssIcon from './../../assets/skills-icons/css.png';
 import laravelIcon from './../../assets/skills-icons/laravel.png';
 import javaIcon from './../../assets/skills-icons/java.png';
 import gitIcon from './../../assets/skills-icons/git.png';
-import jsIcon from './../../assets/skills-icons/js.png';
-import bootstrapIcon from './../../assets/skills-icons/bootstrap.png';
-import cppIcon from './../../assets/skills-icons/c++.png';
+import tsqlIcon from './../../assets/skills-icons/tsql.svg';
+import plsqlIcon from './../../assets/skills-icons/plsql.svg';
+import csharpIcon from './../../assets/skills-icons/csharp.png';
+import jsIcon from './../../assets/skills-icons/js.svg';
+import reactIcon from './../../assets/skills-icons/react.svg';
+import dotnetIcon from './../../assets/skills-icons/dotnet.png';
+import azureIcon from './../../assets/skills-icons/azure.png';
+import jwtIcon from './../../assets/skills-icons/jwt2.svg';
 import githubIcon from './../../assets/github.png';
 import portrait from './../../assets/portrait.png';
 import wavingHand from './../../assets/waving-hand.png';
 import resumeIcon from './../../assets/resume.png';
 import linkedinIcon from './../../assets/linkedin.png';
-import resumePDF from './../../assets/Lebenslauf_Younes_Khoubaz.pdf';
-import experienceIcon from './../../assets/experience.png';
-import educationIcon from './../../assets/education.png';
+import cv_de from './../../assets/Lebenslauf_Younes_Khoubaz.pdf';
+import cv_en from './../../assets/Resume_Younes_Khoubaz.pdf';
+import cv_fr from './../../assets/CV_Younes_Khoubaz.pdf';
 import emailIcon from './../../assets/email.png';
 import linkedinSquaredIcon from './../../assets/linkedin-squared.png';
 import phoneIcon from './../../assets/phone-call.png';
@@ -30,9 +33,65 @@ import codingIcon from './../../assets/coding.png';
 import arrowIcon from './../../assets/arrow.png';
 import HomeHeader from '../containers/HomeHeader';
 import CopyrightFooter from '../containers/CopyrightFooter';
+import { Slide } from 'react-slideshow-image';
+import SkillCard from '../components/SkillCard';
+import Lightbox from 'yet-another-react-lightbox';
+import { useState } from 'react';
+import { courtProjectSlides } from '../components/ProjectsSlides';
+import { Captions, Zoom, Fullscreen } from 'yet-another-react-lightbox/plugins';
+import 'yet-another-react-lightbox/styles.css';
+import 'yet-another-react-lightbox/plugins/captions.css';
+import Chip from '../components/Chip';
 
 const HomePage = () => {
   const { t, i18n } = useTranslation();
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
+  const handleDownloadCV = () => {
+    switch (i18n.language) {
+      case 'de':
+        window.open(cv_de);
+        break;
+      case 'en':
+        window.open(cv_en);
+        break;
+      case 'fr':
+        window.open(cv_fr);
+        break;
+      default:
+        window.open(cv_en);
+    }
+  };
+
+  const properties = {
+    prevArrow: (
+      <button className="nav_btns">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M8.065 12.626c.254 1.211 1.608 2.082 4.315 3.822c2.945 1.893 4.417 2.84 5.61 2.475c.403-.124.775-.34 1.088-.635C20 17.418 20 15.612 20 12s0-5.418-.922-6.288a2.8 2.8 0 0 0-1.088-.635c-1.193-.365-2.665.582-5.61 2.475c-2.707 1.74-4.06 2.61-4.315 3.822c-.087.412-.087.84 0 1.252M4 4v16"
+            color="black"
+          ></path>
+        </svg>
+      </button>
+    ),
+    nextArrow: (
+      <button className="nav_btns">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15.935 12.626c-.254 1.211-1.608 2.082-4.315 3.822c-2.945 1.893-4.417 2.84-5.61 2.475a2.8 2.8 0 0 1-1.088-.635C4 17.418 4 15.612 4 12s0-5.418.922-6.288a2.8 2.8 0 0 1 1.089-.635c1.192-.365 2.664.582 5.609 2.475c2.707 1.74 4.06 2.61 4.315 3.822c.087.412.087.84 0 1.252M20 5v14"
+            color="black"
+          ></path>
+        </svg>
+      </button>
+    ),
+    autoplay: false,
+  };
 
   return (
     <>
@@ -43,27 +102,24 @@ const HomePage = () => {
         </div>
         <div className="text-container">
           <p className="normal-text">
-            Hallo&nbsp;
+            {t('hello')}&nbsp;
             <img src={wavingHand} alt="Wave emote" id="wave" />
-            &nbsp;, ich bin
+            &nbsp;, {t('iam')}
           </p>
           <h1 className="header">Younes Khoubaz</h1>
-          <h2 className="header2">Fachinformatiker</h2>
+          <h2 className="header2">{t('title')}</h2>
           <div className="btn-container">
-            <button
-              className="btn btn-cv"
-              onClick={() => window.open(resumePDF)}
-            >
+            <button className="btn btn-cv" onClick={() => handleDownloadCV()}>
               <div>
                 <img src={resumeIcon} alt="Download icon" id="download-icon" />
               </div>
-              Lebenslauf herunterladen
+              {t('downloadCV')}
             </button>
             <button
               className="btn btn-contact"
               onClick={() => (window.location.href = '#contact')}
             >
-              Kontaktinformationen
+              {t('contactInfo')}
             </button>
           </div>
           <div id="socials-container">
@@ -93,353 +149,192 @@ const HomePage = () => {
         </div>
       </section>
       <section id="about">
-        <h1 className="header">Über mich</h1>
+        <h1 className="header">{t('aboutMe')}</h1>
         <div className="about-details-container">
-          <div className="exp-edu-containers">
-            <div className="exp-edu-container">
-              {/* experience container  */}
-              <img
-                src={experienceIcon}
-                alt="Experience Icon"
-                className="icon"
-              />
-              <h3>Erfahrung</h3>
-              <p>4 Monate Praktikum</p>
-              <p>Anwendungsentwecklung</p>
-            </div>
-            <div className="exp-edu-container">
-              {/* education container */}
-              <img src={educationIcon} alt="Education Icon" className="icon" />
-              <h3>Ausbildung</h3>
-              <p>Hochschulabschluss der Technologie</p>
-              <p>Computertechnik</p>
-            </div>
-          </div>
           <div className="text-container">
-            <p>
-              Ich bin ein hochqualifizierter und erfahrener IT-Entwickler aus
-              Kénitra Marokko, mit Leidenschaft für die Entwicklung innovativer
-              und benutzerfreundlicher Software. Ich habe ein solides
-              Verständnis des Softwareentwicklung und bin ich in einer Vielzahl
-              von Programmiersprachen und Technologien versiert. Ich bin auch
-              ein Teamplayer und immer bereit, neue Dinge zu lernen.
-              <br />
-              <br />
-              Ich bin ein schneller Lerner und immer bereit, neue
-              Herausforderungen anzunehmen. Ich bin auch ein hochmotivierter und
-              ergebnisorientierter Mensch. Ich bin zuversichtlich, dass ich
-              einen bedeutenden Beitrag zu Ihrem Team leisten kann.
-            </p>
+            <p>{t('aboutParagraph')}</p>
           </div>
         </div>
       </section>
       <section id="skills">
-        <h1 className="header">Fähigkeiten</h1>
+        <h1 className="header">{t('skills')}</h1>
         <div className="skills-section-container">
           <div className="skill-sets-container">
-            <div className="personal-skill-set">
-              <h3 className="header2">persönliche Fähigkeiten</h3>
-              <div className="personal-skill-set-container">
-                <div className="actual-personal-skills">
-                  <article>
-                    <img
-                      src={checkCircle}
-                      alt="Check circle"
-                      className="icon"
-                    />
-                    <h3>Zuverlässigkeit</h3>
-                  </article>
-                  <article>
-                    <img
-                      src={checkCircle}
-                      alt="Check circle"
-                      className="icon"
-                    />
-                    <h3>Teamfähigkeit</h3>
-                  </article>
-                  <article>
-                    <img
-                      src={checkCircle}
-                      alt="Check circle"
-                      className="icon"
-                    />
-                    <h3>Lernbereitschaft</h3>
-                  </article>
-                  <article>
-                    <img
-                      src={checkCircle}
-                      alt="Check circle"
-                      className="icon"
-                    />
-                    <h3>Zeitmanagement</h3>
-                  </article>
-                  <article>
-                    <img
-                      src={checkCircle}
-                      alt="Check circle"
-                      className="icon"
-                    />
-                    <h3>Deutschkentnisse</h3>
-                  </article>
-                  <article>
-                    <img
-                      src={checkCircle}
-                      alt="Check circle"
-                      className="icon"
-                    />
-                    <h3>Englischkentnisse</h3>
-                  </article>
-                </div>
-              </div>
-            </div>
-            <div className="technologies-skill-set">
-              <h3 className="header2">Werkzeuge und Technologien</h3>
-              <div className="technologies-skill-set-container">
-                <div className="column">
-                  <img src={htmlIcon} alt="HTML icon" className="icon" />
-                  <br />
-                  <p>HTML</p>
-                  <img
-                    src={phpIcon}
-                    alt="PHP icon"
-                    className="icon"
-                    id="php-img"
-                  />
-                  <br />
-                  <p>PHP</p>
-                  <img
-                    src={databaseIcon}
-                    alt="DATABASE Icon"
-                    className="icon"
-                  />
-                  <br />
-                  <p>SQL</p>
-                  <img src={umlIcon} alt="UML Icon" className="icon" />
-                  <br />
-                  <p>UML</p>
-                </div>
-                <div className="column">
-                  <img src={cssIcon} alt="CSS icon" className="icon" />
-                  <br />
-                  <p>CSS</p>
-                  <img src={laravelIcon} alt="Laravel icon" className="icon" />
-                  <br />
-                  <p>Laravel</p>
-                  <img src={javaIcon} alt="JAVA Icon" className="icon" />
-                  <br />
-                  <p>Java</p>
-                  <img src={gitIcon} alt="git icon" className="icon" />
-                  <br />
-                  <p>Git</p>
-                </div>
-                <div className="column">
-                  <img src={jsIcon} alt="Javascript icon" className="icon" />
-                  <p>Javascript</p>
-                  <img
-                    src={bootstrapIcon}
-                    alt="bootstrap icon"
-                    className="icon"
-                  />
-                  <p>Bootstrap</p>
-                  <img src={cppIcon} alt="c++ icon" className="icon" />
-                  <p>C++</p>
-                  <img src={githubIcon} alt="github icon" className="icon" />
-                  <p>Github</p>
-                </div>
-              </div>
-            </div>
+            <SkillCard name="Javascript" img={jsIcon} />
+            <SkillCard name="C#" img={csharpIcon} />
+            <SkillCard name="ReactJS" img={reactIcon} />
+            <SkillCard name=".NET Core" img={dotnetIcon} />
+            <SkillCard name="Java" img={javaIcon} />
+            <SkillCard name="CSS" img={cssIcon} />
+            {/* <SkillCard name="HTML" img={htmlIcon} />
+            <SkillCard name="CSS" img={cssIcon} /> */}
+            <SkillCard name="Azure Cloud" img={azureIcon} />
+            <SkillCard name="JWT" img={jwtIcon} />
+            <SkillCard name="Git" img={gitIcon} />
+            <SkillCard name="T-SQL" img={tsqlIcon} />
+            <SkillCard name="PL/SQL" img={plsqlIcon} />
+            <SkillCard name="UML" img={umlIcon} />
           </div>
         </div>
       </section>
       <section id="projects">
-        <h1 className="header">Projekte, die ich abgeschlossen habe</h1>
-        {/* Praktikumsprojekt Berufungsgericht */}
-        <div className="project-widget-container">
-          <div className="project-widget">
-            <div className="project-media-title">
-              <div className="widget-img-container">
-                <img src={project1Cover} />
-              </div>
-              <h3>Management System</h3>
-            </div>
-            <div className="project-details">
-              <p>
-                In meiner früheren Rolle als Praktikant in der IT-Abteilung
-                des&nbsp;
-                <a
-                  href="http://www.cakenitra.ma/"
-                  target="_blank"
-                  style={{ color: '#e69600', textDecoration: 'none' }}
+        <h1 className="header">{t('completedProjects')}</h1>
+        <Slide {...properties}>
+          {/* Praktikumsprojekt Berufungsgericht */}
+          <div className="project-widget-container">
+            <div className="project-widget">
+              <div className="project-img-title-container">
+                <div
+                  className="project-img-container"
+                  onClick={() => setLightboxOpen(true)}
                 >
-                  Berufungsgerichts in Kénitra
-                </a>
-                , ich damit beauftragt, eine neue Webanwendung zu entwickeln und
-                einzuführen, die im lokalen Netzwerk des Gerichts bereitgestellt
-                wird, die Personalressourcen und bereitgestellten Bürogeräte von
-                der Regierung verwaltet, um die Effizienz im Arbeitsablauf zu
-                steigern und bei der Entscheidungsfindung zu helfen.
-              </p>
-              <div className="links-container">
-                <div className="code-link-container">
-                  <a
-                    href="http://management-system.great-site.net/"
-                    target="_blank"
-                    className="code-link underline"
-                  >
-                    <img src={foreignIcon} className="icon" />
-                    &nbsp;live sehen
-                  </a>
+                  <img src={project1Cover} />
+                  <div className="project-overlay-text">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="3em"
+                      height="3em"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#EBEBEB"
+                        d="M5 3h14v11h-2v2h-2v2H1V7h2V5h2zm13 10V4H6v9zm-3-4c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2m1 6v-1H5V6H4v9zM7 6l10 6H7zm7 11v-1H3V8H2v9z"
+                      />
+                    </svg>
+                  </div>
                 </div>
-                <div className="code-link-container">
-                  <a
-                    href="https://github.com/younes-47/Praktikumsprojekt"
-                    className="code-link underline"
-                    target="_blank"
-                  >
-                    <img src={codingIcon} alt="" className="icon" />
-                    &nbsp;Quellcode sehen
-                  </a>
+                <p>{t('courtProject.title')}</p>
+              </div>
+
+              <div className="project-details">
+                <div className="chips-container">
+                  <Chip text="Laravel" color="#FF2D20" />
+                  <Chip text="PHP" color="#7A86B8" />
+                  <Chip text="jQuerry" color="#00758F" />
+                  <Chip text="MySQL" color="#00758F" />
                 </div>
-                <div className="details-link-container">
+                <p>
+                  {t('courtProject.description1')}&nbsp;
                   <a
-                    href="projects-details/praktikumsprojekt.html"
-                    className="details-link"
+                    href="http://www.cakenitra.ma/"
+                    target="_blank"
+                    style={{ color: '#e69600', textDecoration: 'none' }}
                   >
-                    <img src={arrowIcon} alt="" className="icon" />
-                    &nbsp;Mehr Details
+                    {t('courtProject.description2')}
                   </a>
+                  {t('courtProject.description3')}
+                </p>
+                <div className="links-container">
+                  <div className="link-container">
+                    <a
+                      href="https://github.com/younes-47/Praktikumsprojekt"
+                      className="underline"
+                      target="_blank"
+                    >
+                      <img
+                        src={codingIcon}
+                        alt="Coding Icon"
+                        className="icon"
+                      />
+                      &nbsp;Source Code
+                    </a>
+                  </div>
+                  <div
+                    className="waving-link-container"
+                    onClick={() => setLightboxOpen(true)}
+                  >
+                    <a className="waving-link underline">
+                      <img src={arrowIcon} alt="Coding Icon" className="icon" />
+                      &nbsp;More Details
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* Abschlussprojekt eine Plattform  */}
-        <div className="project-widget-container">
-          <div className="project-widget">
-            <div className="project-media-title">
-              <div className="widget-img-container">
-                <img src={project2Cover} alt="" />
+          {/* Abschlussprojekt eine Plattform  */}
+          <div className="project-widget-container">
+            <div className="project-widget">
+              <div className="project-img-title-container">
+                <div className="project-img-container">
+                  <img src={project2Cover} alt="" />
+                </div>
+                <p>{t('thesesPlatformProject.title')}</p>
               </div>
-              <h3>eine Plattform für meine Hochschule</h3>
-            </div>
-            <div className="project-details">
-              <p>
-                Für mein Abschlussprojekt habe ich eine Full-Stack-Anwendung
-                entwickelt. Eine Plattform, die Projekte des Studienabschlusses
-                von Studenten
-                <a
-                  href="https://est.uit.ac.ma/"
-                  target="_blank"
-                  style={{ color: '#e69600', textDecoration: 'none' }}
-                >
-                  &nbsp;meiner Hochshule&nbsp;
-                </a>
-                mit Benutzerauthentifizierung und Mehrere Berechtigungen System
-                verwaltet, bei der sich der Administrator, die Professoren und
-                die Studenten anmelden und auf wichtige Informationen zugreifen
-                sowie verschiedene Aufgaben ausführen können.
-              </p>
-              <div className="links-container">
-                <div className="code-link-container">
+              <div className="project-details">
+                <p>
+                  {t('thesesPlatformProject.description1')}
                   <a
-                    href="http://abschlussprojekt.great-site.net"
+                    href="https://est.uit.ac.ma/"
                     target="_blank"
-                    className="code-link underline"
+                    style={{ color: '#e69600', textDecoration: 'none' }}
                   >
-                    <img src={foreignIcon} alt="" className="icon" />
-                    &nbsp;live sehen
+                    &nbsp;{t('thesesPlatformProject.description2')}&nbsp;
                   </a>
-                </div>
-                <div className="code-link-container">
-                  <a
-                    href="https://github.com/younes-47/Abschlussprojekt"
-                    target="_blank"
-                    className="code-link underline"
-                  >
-                    <img src={codingIcon} alt="" className="icon" />
-                    &nbsp;Quellcode sehen
-                  </a>
-                </div>
-                <div className="details-link-container">
-                  <a
-                    href="projects-details/abschlussprojekt.html"
-                    className="details-link"
-                  >
-                    <img src={arrowIcon} alt="" className="icon" />
-                    &nbsp;Mehr Details
-                  </a>
+                  {t('thesesPlatformProject.description3')}
+                </p>
+                <div className="links-container">
+                  <div className="code-link-container">
+                    <a
+                      href="https://github.com/younes-47/Abschlussprojekt"
+                      target="_blank"
+                      className="code-link underline"
+                    >
+                      <img src={codingIcon} alt="" className="icon" />
+                      &nbsp;Source Code
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* Praktikumsprojekt Reisebüro-landingpage */}
-        <div className="project-widget-container">
-          <div className="project-widget">
-            <div className="project-media-title">
-              <div className="widget-img-container">
-                <img src={project3Cover} alt="" />
+          {/* Praktikumsprojekt Reisebüro-landingpage */}
+          <div className="project-widget-container">
+            <div className="project-widget">
+              <div className="project-img-title-container">
+                <div className="project-img-container">
+                  <img src={project3Cover} alt="" />
+                </div>
+                <p>Reisebüro Landingpage</p>
               </div>
-              <h3>Reisebüro Landingpage</h3>
-            </div>
-            <div className="project-details">
-              <p>
-                Als Praktikant bei
-                <a
-                  href="https://www.linkedin.com/company/digiload3/"
-                  target="_blank"
-                  style={{ color: '#e69600', textDecoration: 'none' }}
-                >
-                  &nbsp;digiload&nbsp;
-                </a>
-                Unternehmen und während meines ersten Jahres an der EST
-                Hochschule wurde ich beauftragt, eine Landing Page für ein
-                Reisebüro zu entwickeln. Die Landing Page dient dazu, die
-                Informationen des Reisebüros, ihre Reiseziele und Preise
-                darzustellen, die Möglichkeit, sie zu kontaktieren und eine
-                Buchung vorzunehmen.
-              </p>
-              <div className="links-container">
-                <div className="code-link-container">
+              <div className="project-details">
+                <p>
+                  Als Praktikant bei
                   <a
-                    href="http://voyyage-reiseburo.great-site.net"
+                    href="https://www.linkedin.com/company/digiload3/"
                     target="_blank"
-                    className="code-link underline"
+                    style={{ color: '#e69600', textDecoration: 'none' }}
                   >
-                    <img src={foreignIcon} alt="" className="icon" />
-                    &nbsp;live sehen
+                    &nbsp;digiload&nbsp;
                   </a>
-                </div>
-                <div className="code-link-container">
-                  <a
-                    href="https://github.com/younes-47/Reiseburo-Landingpage"
-                    className="code-link underline"
-                    target="_blank"
-                  >
-                    <img src={codingIcon} alt="" className="icon" />
-                    &nbsp;Quellcode sehen
-                  </a>
-                </div>
-                <div className="details-link-container">
-                  <a
-                    href="projects-details/reisebüro-landingpage-projekt.html"
-                    className="details-link"
-                  >
-                    <img src={arrowIcon} alt="" className="icon" />
-                    &nbsp;Mehr Details
-                  </a>
+                  Unternehmen und während meines ersten Jahres an der EST
+                  Hochschule wurde ich beauftragt, eine Landing Page für ein
+                  Reisebüro zu entwickeln. Die Landing Page dient dazu, die
+                  Informationen des Reisebüros, ihre Reiseziele und Preise
+                  darzustellen, die Möglichkeit, sie zu kontaktieren und eine
+                  Buchung vorzunehmen.
+                </p>
+                <div className="links-container">
+                  <div className="code-link-container">
+                    <a
+                      href="https://github.com/younes-47/Reiseburo-Landingpage"
+                      className="code-link underline"
+                      target="_blank"
+                    >
+                      <img src={codingIcon} alt="" className="icon" />
+                      &nbsp;Source Code
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </Slide>
       </section>
       <section id="contact">
         <div className="contact-container">
-          <h1 className="header">meine Kontaktinformationen</h1>
-          <h3 className="header2">
-            ich würde mich freuen, von Ihnen zu hören!
-          </h3>
+          <h1 className="header">{t('myContactInfo')}</h1>
+          <h3 className="header2">{t('hearingFromYou')}</h3>
           <div className="contact-info-container">
             <div className="email-container">
               <img src={emailIcon} alt="Email Icon" className="icon" />
@@ -472,6 +367,13 @@ const HomePage = () => {
         </div>
         <CopyrightFooter />
       </section>
+      <Lightbox
+        plugins={[Captions, Zoom, Fullscreen]}
+        captions={{ showToggle: true }}
+        open={lightboxOpen}
+        close={() => setLightboxOpen(false)}
+        slides={courtProjectSlides}
+      />
     </>
   );
 };
