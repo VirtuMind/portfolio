@@ -466,13 +466,13 @@ section#about {
   margin-bottom: 0.8rem;
 }
 
-.project-img-title-container {
+.project-thumbnail-title-container {
   padding: 1em;
   line-height: 1.6;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.project-img-container {
+.project-thumbnail-container {
   cursor: pointer;
   position: relative;
   display: inline-flex;
@@ -484,7 +484,7 @@ section#about {
   width: auto;
 }
 
-.project-img-container::before {
+.project-thumbnail-container::before {
   position: absolute;
   content: '';
   top: -4%;
@@ -499,7 +499,7 @@ section#about {
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.project-img-container::after {
+.project-thumbnail-container::after {
   position: absolute;
   content: '';
   top: -8%;
@@ -514,33 +514,33 @@ section#about {
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.project-img-container img {
+.project-thumbnail-container img {
   width: 250px;
   height: 250px;
   border-radius: inherit;
   z-index: 3;
 }
 
-.project-img-container:hover {
+.project-thumbnail-container:hover {
   transform: translate(0px, -16px);
   background: rgba(0, 0, 0, 0.7); /* Black overlay */
 }
 
-.project-img-container:hover::before {
+.project-thumbnail-container:hover::before {
   rotate: -8deg;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.project-img-container:hover::after {
+.project-thumbnail-container:hover::after {
   rotate: 8deg;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.project-img-title-container p {
+.project-thumbnail-title-container p {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1.1rem;
@@ -548,7 +548,7 @@ section#about {
   text-align: center;
 }
 
-.project-img-container:hover img {
+.project-thumbnail-container:hover img {
   /* transform: scale(1.1); */
   filter: blur(1px) brightness(0.5);
   transition: all 0.6s ease;
@@ -562,7 +562,7 @@ section#about {
   z-index: 5;
 }
 
-.project-img-container:hover .project-overlay-text {
+.project-thumbnail-container:hover .project-overlay-text {
   opacity: 1;
 }
 
