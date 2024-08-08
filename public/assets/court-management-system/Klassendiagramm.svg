@@ -1,0 +1,71 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 825 782" width="825" height="782"><style>tspan{white-space:pre}.a{fill:#fff1aa;stroke:#000}.b{fill:none;stroke:#000;stroke-miterlimit:10}.c{font-size: 14px;fill: #000000;font-family: "Helvetica"}.d{fill:none}.e{font-size: 12px;fill: #000000;font-family: "Helvetica"}.f{fill:#e6e6e6;stroke:#000}.g{font-size: 14px;fill: #000000;font-family: "Open  Sans"}.h{fill:#c8f08c;stroke:#000}.i{fill:none;stroke:#000;stroke-miterlimit:10;stroke-dasharray:5}</style><path class="a" d="m380 452h131v94h-131z"/><path class="b" d="m380 471.2h131"/><text style="transform:matrix(1,0,0,1,445,465.5)" ><tspan x="-20.3" y="0" class="c">Raum
+</tspan></text><path class="d" d="m380 474.2h131v16h-131z"/><text style="transform:matrix(1,0,0,1,386.5,486.7)" ><tspan x="0" y="0" class="e">-ID
+</tspan></text><path class="d" d="m380 490.2h131v16h-131z"/><text style="transform:matrix(1,0,0,1,386.5,502.7)" ><tspan x="0" y="0" class="e">-Raumnummer
+</tspan></text><path class="d" d="m380 506.2h131v16h-131z"/><text style="transform:matrix(1,0,0,1,386.5,518.7)" ><tspan x="0" y="0" class="e">-Name
+</tspan></text><path class="a" d="m63 452h121v118h-121z"/><path class="b" d="m63 471.2h121"/><text style="transform:matrix(1,0,0,1,123,465.5)" ><tspan x="-39.9" y="0" class="c">Ausrüstung
+</tspan></text><path class="d" d="m63 474.2h121v16h-121z"/><text style="transform:matrix(1,0,0,1,69.5,486.7)" ><tspan x="0" y="0" class="e">-ID
+</tspan></text><path class="d" d="m63 490.2h121v16h-121z"/><text style="transform:matrix(1,0,0,1,69.5,502.7)" ><tspan x="0" y="0" class="e">-Typ
+</tspan></text><path class="d" d="m63 506.2h121v16h-121z"/><text style="transform:matrix(1,0,0,1,69.5,518.7)" ><tspan x="0" y="0" class="e">-Modell
+</tspan></text><path class="d" d="m63 522.2h121v16h-121z"/><text style="transform:matrix(1,0,0,1,69.5,534.7)" ><tspan x="0" y="0" class="e">-Details
+</tspan></text><path class="d" d="m63 538.2h121v16h-121z"/><text style="transform:matrix(1,0,0,1,69.5,550.7)" ><tspan x="0" y="0" class="e">-Stock
+</tspan></text><path class="a" d="m689 428h135v166h-135z"/><path class="b" d="m689 447.2h135"/><text style="transform:matrix(1,0,0,1,756,441.5)" ><tspan x="-38.5" y="0" class="c">Mitarbeiter
+</tspan></text><path class="d" d="m689 450.2h135v16h-135z"/><text style="transform:matrix(1,0,0,1,695.5,462.7)" ><tspan x="0" y="0" class="e">-ID
+</tspan></text><path class="d" d="m689 466.2h135v16h-135z"/><text style="transform:matrix(1,0,0,1,695.5,478.7)" ><tspan x="0" y="0" class="e">-Nachname
+</tspan></text><path class="d" d="m689 482.2h135v16h-135z"/><text style="transform:matrix(1,0,0,1,695.5,494.7)" ><tspan x="0" y="0" class="e">-Vorname
+</tspan></text><path class="d" d="m689 498.2h135v16h-135z"/><text style="transform:matrix(1,0,0,1,695.5,510.7)" ><tspan x="0" y="0" class="e">-Telefonnummer
+</tspan></text><path class="d" d="m689 514.2h135v16h-135z"/><text style="transform:matrix(1,0,0,1,695.5,526.7)" ><tspan x="0" y="0" class="e">-Adresse
+</tspan></text><path class="d" d="m689 530.2h135v16h-135z"/><text style="transform:matrix(1,0,0,1,695.5,542.7)" ><tspan x="0" y="0" class="e">-Funktion
+</tspan></text><path class="d" d="m689 546.2h135v16h-135z"/><text style="transform:matrix(1,0,0,1,695.5,558.7)" ><tspan x="0" y="0" class="e">-PPR_Nummer
+</tspan></text><path class="d" d="m689 562.2h135v16h-135z"/><text style="transform:matrix(1,0,0,1,695.5,574.7)" ><tspan x="0" y="0" class="e">-Zustand
+</tspan></text><path class="b" d="m689 505h-178"/><path class="b" d="m184 505h196"/><path class="f" d="m320 1h247v319h-247z"/><path class="b" d="m320 20.2h247"/><path class="b" d="m320 73.2h247"/><text style="transform:matrix(1,0,0,1,443,14.5)" ><tspan x="-47.7" y="0" class="c">Administartor
+</tspan></text><path class="d" d="m320 23.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,35.7)" ><tspan x="0" y="0" class="e">-vollständiger_Name: String
+</tspan></text><path class="d" d="m320 39.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,51.7)" ><tspan x="0" y="0" class="e">-Nutzername: String
+</tspan></text><path class="d" d="m320 55.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,67.7)" ><tspan x="0" y="0" class="e">-Passwort: String
+</tspan></text><path class="d" d="m320 73.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,85.7)" ><tspan x="0" y="0" class="e">+Authentifizieren()
+</tspan></text><path class="d" d="m320 89.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,101.7)" ><tspan x="0" y="0" class="e">+Passwort_bearbeiten()
+</tspan></text><path class="d" d="m320 105.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,117.7)" ><tspan x="0" y="0" class="e">+Mitarbeiter_hinzufügen()
+</tspan></text><path class="d" d="m320 121.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,133.7)" ><tspan x="0" y="0" class="e">+Mitarbeiter_bearbeiten()
+</tspan></text><path class="d" d="m320 137.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,149.7)" ><tspan x="0" y="0" class="e">+Mitarbeiter_entfernen()
+</tspan></text><path class="d" d="m320 153.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,165.7)" ><tspan x="0" y="0" class="e">+Mitarbeiter_anzeigen()
+</tspan></text><path class="d" d="m320 169.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,181.7)" ><tspan x="0" y="0" class="e">+Ausrüstung_anzeigen()
+</tspan></text><path class="d" d="m320 185.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,197.7)" ><tspan x="0" y="0" class="e">+Ausrüstung_hinzufügen()
+</tspan></text><path class="d" d="m320 201.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,213.7)" ><tspan x="0" y="0" class="e">+Ausrüstung_bearbeiten()
+</tspan></text><path class="d" d="m320 217.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,229.7)" ><tspan x="0" y="0" class="e">+Ausrüstung_löschen()
+</tspan></text><path class="d" d="m320 233.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,245.7)" ><tspan x="0" y="0" class="e">+Raum_anzeigen()
+</tspan></text><path class="d" d="m320 249.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,261.7)" ><tspan x="0" y="0" class="e">+Raum_bearbeiten()
+</tspan></text><path class="d" d="m320 265.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,277.7)" ><tspan x="0" y="0" class="e">+Raum_hinzufügen()
+</tspan></text><path class="d" d="m320 281.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,293.7)" ><tspan x="0" y="0" class="e">+Raum_löschen()
+</tspan></text><path class="d" d="m320 297.2h247v16h-247z"/><text style="transform:matrix(1,0,0,1,326.5,309.7)" ><tspan x="0" y="0" class="e">+Geschichte_anzeigen()
+</tspan></text><path class="d" d="m196 452h34v30h-34z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-12.4" y="0" class="g">0..*
+</tspan></text><path class="d" d="m336 452h34v30h-34z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-12.4" y="0" class="g">0..*
+</tspan></text><path class="d" d="m511 457h34v30h-34z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-12.4" y="0" class="g">0..*
+</tspan></text><path class="h" d="m208 594h147v186.8h-147z"/><path class="b" d="m208 613.2h147"/><text style="transform:matrix(1,0,0,1,281,607.5)" ><tspan x="-48.3" y="0" class="c">RA-Beziehung
+</tspan></text><path class="d" d="m208 616.2h147v16h-147z"/><text style="transform:matrix(1,0,0,1,214.5,628.7)" ><tspan x="0" y="0" class="e">-ID
+</tspan></text><path class="d" d="m208 632.2h147v16h-147z"/><text style="transform:matrix(1,0,0,1,214.5,644.7)" ><tspan x="0" y="0" class="e">-ID_STANDORT
+</tspan></text><path class="d" d="m208 648.2h147v16h-147z"/><text style="transform:matrix(1,0,0,1,214.5,660.7)" ><tspan x="0" y="0" class="e">-Typ
+</tspan></text><path class="d" d="m208 664.2h147v16h-147z"/><text style="transform:matrix(1,0,0,1,214.5,676.7)" ><tspan x="0" y="0" class="e">-Modell
+</tspan></text><path class="d" d="m208 680.2h147v16h-147z"/><text style="transform:matrix(1,0,0,1,214.5,692.7)" ><tspan x="0" y="0" class="e">-aktuelle_Menge
+</tspan></text><path class="d" d="m208 696.2h147v16h-147z"/><text style="transform:matrix(1,0,0,1,214.5,708.7)" ><tspan x="0" y="0" class="e">-hinzugefügt_Menge
+</tspan></text><path class="d" d="m208 712.2h147v16h-147z"/><text style="transform:matrix(1,0,0,1,214.5,724.7)" ><tspan x="0" y="0" class="e">-bewegte_Menge
+</tspan></text><path class="d" d="m208 728.2h147v16h-147z"/><text style="transform:matrix(1,0,0,1,214.5,740.7)" ><tspan x="0" y="0" class="e">-Hinzufügungsdatum
+</tspan></text><path class="d" d="m208 744.2h147v16h-147z"/><text style="transform:matrix(1,0,0,1,214.5,756.7)" ><tspan x="0" y="0" class="e">-Überweisungsdatum
+</tspan></text><path class="d" d="m208 760.2h147v16h-147z"/><text style="transform:matrix(1,0,0,1,214.5,772.7)" ><tspan x="0" y="0" class="e">-Zustand
+</tspan></text><path class="h" d="m528 624h146v106.8h-146z"/><path class="b" d="m528 643.2h146"/><text style="transform:matrix(1,0,0,1,600.5,637.5)" ><tspan x="-50" y="0" class="c">RM-Beziehung
+</tspan></text><path class="d" d="m528 646.2h146v16h-146z"/><text style="transform:matrix(1,0,0,1,534.5,658.7)" ><tspan x="0" y="0" class="e">-ID
+</tspan></text><path class="d" d="m528 662.2h146v16h-146z"/><text style="transform:matrix(1,0,0,1,534.5,674.7)" ><tspan x="0" y="0" class="e">-Raumnummer
+</tspan></text><path class="d" d="m528 678.2h146v16h-146z"/><text style="transform:matrix(1,0,0,1,534.5,690.7)" ><tspan x="0" y="0" class="e">-ID_Mitarbeiter
+</tspan></text><path class="d" d="m528 694.2h146v16h-146z"/><text style="transform:matrix(1,0,0,1,534.5,706.7)" ><tspan x="0" y="0" class="e">-Beitrittsdatum
+</tspan></text><path class="d" d="m528 710.2h146v16h-146z"/><text style="transform:matrix(1,0,0,1,534.5,722.7)" ><tspan x="0" y="0" class="e">-Abreisedatum
+</tspan></text><path class="i" d="m282 505l-0.2 89"/><path class="i" d="m600 505l0.7 119"/><path class="b" d="m118 452v-281q0-10 10-10h192"/><path class="b" d="m754 429v-258q0-10-10-10h-174"/><path class="b" d="m444.5 452v-132"/><path class="d" d="m751 398h34v30h-34z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-4.5" y="0" class="g">1
+</tspan></text><path class="d" d="m446 422h34v30h-34z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-4.5" y="0" class="g">1
+</tspan></text><path class="d" d="m119 422h34v30h-34z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-4.5" y="0" class="g">1
+</tspan></text><path class="d" d="m286 125h34v30h-34z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-12.4" y="0" class="g">0..*
+</tspan></text><path class="d" d="m567 125h34v30h-34z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-12.4" y="0" class="g">0..*
+</tspan></text><path class="d" d="m446 320h34v30h-34z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-12.4" y="0" class="g">0..*
+</tspan></text><path class="a" d="m1 1h162v94h-162z"/><path class="b" d="m1 20.2h162"/><text style="transform:matrix(1,0,0,1,81.5,14.5)" ><tspan x="-23.3" y="0" class="c">Nutzer
+</tspan></text><path class="d" d="m1 23.2h162v16h-162z"/><text style="transform:matrix(1,0,0,1,7.5,35.7)" ><tspan x="0" y="0" class="e">-ID
+</tspan></text><path class="d" d="m1 39.2h162v16h-162z"/><text style="transform:matrix(1,0,0,1,7.5,51.7)" ><tspan x="0" y="0" class="e">-vollständiger_Name: String
+</tspan></text><path class="d" d="m1 55.2h162v16h-162z"/><text style="transform:matrix(1,0,0,1,7.5,67.7)" ><tspan x="0" y="0" class="e">-Nutzername: String
+</tspan></text><path class="d" d="m1 71.2h162v16h-162z"/><text style="transform:matrix(1,0,0,1,7.5,83.7)" ><tspan x="0" y="0" class="e">-Passwort: String
+</tspan></text><path class="b" d="m176.1 47.6l143.9-0.6"/><path fill-rule="evenodd" class="b" d="m164.1 47.6l12-6v12z"/><path class="d" d="m655 457h34v30h-34z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-12.4" y="0" class="g">0..*
+</tspan></text><path class="b" d="m689 505h-178"/><path class="b" d="m184 505h196"/><path class="i" d="m282 505l-0.2 89"/><path class="i" d="m600 505l0.7 119"/><path class="b" d="m118 452v-281q0-10 10-10h192"/><path class="b" d="m754 429v-258q0-10-10-10h-174"/><path class="b" d="m444.5 452v-132"/><path class="b" d="m176.1 47.6l143.9-0.6"/><path fill-rule="evenodd" class="b" d="m164.1 47.6l12-6v12z"/></svg>

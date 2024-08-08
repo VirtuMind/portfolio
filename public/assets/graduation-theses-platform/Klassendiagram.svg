@@ -1,0 +1,78 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 950" width="950" height="950"><style>tspan{white-space:pre}.a{fill:#fff1aa;stroke:#000}.b{fill:none;stroke:#000;stroke-miterlimit:10}.c{font-size: 18px;fill: #000000;font-family: "Helvetica"}.d{fill:none}.e{font-size: 12px;fill: #000000;font-family: "Helvetica"}.f{font-size: 20px;fill: #000000;font-family: "Open  Sans"}.g{fill:#c8f08c;stroke:#000}.h{font-size: 14px;fill: #000000;font-family: "Helvetica"}.i{fill:none;stroke:#000;stroke-miterlimit:10;stroke-dasharray:5}</style><path class="a" d="m321 659h202v182h-202z"/><path class="b" d="m321 682.9h202"/><text style="transform:matrix(1,0,0,1,421.5,676.5)" ><tspan x="-57.3" y="0" class="c">Verteidigung
+</tspan></text><path class="d" d="m321 685.9h202v16h-202z"/><text style="transform:matrix(1,0,0,1,327.5,698.36)" ><tspan x="0" y="0" class="e">-ID_Verteidigung: Int
+</tspan></text><path class="d" d="m321 701.9h202v16h-202z"/><text style="transform:matrix(1,0,0,1,327.5,714.36)" ><tspan x="0" y="0" class="e">-Studentennummer: String
+</tspan></text><path class="d" d="m321 717.9h202v16h-202z"/><text style="transform:matrix(1,0,0,1,327.5,730.36)" ><tspan x="0" y="0" class="e">-Professorenummer: int
+</tspan></text><path class="d" d="m321 733.9h202v16h-202z"/><text style="transform:matrix(1,0,0,1,327.5,746.36)" ><tspan x="0" y="0" class="e">-Raumnummer: String
+</tspan></text><path class="d" d="m321 749.9h202v16h-202z"/><text style="transform:matrix(1,0,0,1,327.5,762.36)" ><tspan x="0" y="0" class="e">-Projektthema: string
+</tspan></text><path class="d" d="m321 765.9h202v16h-202z"/><text style="transform:matrix(1,0,0,1,327.5,778.36)" ><tspan x="0" y="0" class="e">-Datum: Date
+</tspan></text><path class="d" d="m321 781.9h202v16h-202z"/><text style="transform:matrix(1,0,0,1,327.5,794.36)" ><tspan x="0" y="0" class="e">-Note: Double
+</tspan></text><path class="d" d="m321 797.9h202v16h-202z"/><text style="transform:matrix(1,0,0,1,327.5,810.36)" ><tspan x="0" y="0" class="e">-Aufsicht_Professor: String
+</tspan></text><path class="a" d="m767 284.5h182v319.5h-182z"/><path class="b" d="m767 308.4h182"/><path class="b" d="m767 361.4h182"/><text style="transform:matrix(1,0,0,1,857.5,302)" ><tspan x="-28.7" y="0" class="c">Admin
+</tspan></text><path class="d" d="m767 311.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,323.87)" ><tspan x="0" y="0" class="e">-ID_admin: String
+</tspan></text><path class="d" d="m767 327.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,339.87)" ><tspan x="0" y="0" class="e">-Name: String
+</tspan></text><path class="d" d="m767 343.4h182v16h-182z"/><path class="d" d="m767 361.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,373.87)" ><tspan x="0" y="0" class="e">+Student_anzeigen()
+</tspan></text><path class="d" d="m767 377.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,389.87)" ><tspan x="0" y="0" class="e">+Student_bearbeiten()
+</tspan></text><path class="d" d="m767 393.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,405.87)" ><tspan x="0" y="0" class="e">+Student_entfernen()
+</tspan></text><path class="d" d="m767 409.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,421.87)" ><tspan x="0" y="0" class="e">+Student_hinzufügen()
+</tspan></text><path class="d" d="m767 425.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,437.87)" ><tspan x="0" y="0" class="e">+Professor_anzeigen()
+</tspan></text><path class="d" d="m767 441.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,453.87)" ><tspan x="0" y="0" class="e">+Professor_bearbeiten()
+</tspan></text><path class="d" d="m767 457.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,469.87)" ><tspan x="0" y="0" class="e">+Professor_entfernen()
+</tspan></text><path class="d" d="m767 473.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,485.87)" ><tspan x="0" y="0" class="e">+Professor_hinzufügen()
+</tspan></text><path class="d" d="m767 489.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,501.87)" ><tspan x="0" y="0" class="e">+Verteidigung_anzeigen()
+</tspan></text><path class="d" d="m767 505.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,517.87)" ><tspan x="0" y="0" class="e">+Verteidigung_programmieren()
+</tspan></text><path class="d" d="m767 521.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,533.87)" ><tspan x="0" y="0" class="e">+Verteidigung_bearbeiten()
+</tspan></text><path class="d" d="m767 537.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,549.87)" ><tspan x="0" y="0" class="e">+Nutzer_erstellen()
+</tspan></text><path class="d" d="m767 553.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,565.87)" ><tspan x="0" y="0" class="e">+Projektthema_akzeptieren()
+</tspan></text><path class="d" d="m767 569.4h182v16h-182z"/><text style="transform:matrix(1,0,0,1,773.5,581.87)" ><tspan x="0" y="0" class="e">+Projektthema_ablehnen()
+</tspan></text><path class="a" d="m1 402.2h166v223.6h-166z"/><path class="b" d="m1 426.1h166"/><path class="b" d="m1 559.1h166"/><text style="transform:matrix(1,0,0,1,83.5,419.74)" ><tspan x="-35.4" y="0" class="c">Student
+</tspan></text><path class="d" d="m1 429.1h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,441.6)" ><tspan x="0" y="0" class="e">-ID_Student: String
+</tspan></text><path class="d" d="m1 445.1h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,457.6)" ><tspan x="0" y="0" class="e">-Nachname: String
+</tspan></text><path class="d" d="m1 461.1h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,473.6)" ><tspan x="0" y="0" class="e">-Vorname: String
+</tspan></text><path class="d" d="m1 477.1h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,489.6)" ><tspan x="0" y="0" class="e">-Adresse: String
+</tspan></text><path class="d" d="m1 493.1h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,505.6)" ><tspan x="0" y="0" class="e">-Telefonnummer: BigInt
+</tspan></text><path class="d" d="m1 509.1h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,521.6)" ><tspan x="0" y="0" class="e">-Geburtsdatum: date
+</tspan></text><path class="d" d="m1 525.1h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,537.6)" ><tspan x="0" y="0" class="e">-Bereich: string
+</tspan></text><path class="d" d="m1 541.1h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,553.6)" ><tspan x="0" y="0" class="e">-Studentennummer: String
+</tspan></text><path class="d" d="m1 559.1h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,571.6)" ><tspan x="0" y="0" class="e">+Projektthema_wählen()
+</tspan></text><path class="d" d="m1 575.1h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,587.6)" ><tspan x="0" y="0" class="e">+Verteidigung_anzeigen()
+</tspan></text><path class="d" d="m1 591.1h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,603.6)" ><tspan x="0" y="0" class="e">+Profil_anzeigen()
+</tspan></text><path class="a" d="m339 242.5h166v239.5h-166z"/><path class="b" d="m339 266.3h166"/><path class="b" d="m339 399.3h166"/><text style="transform:matrix(1,0,0,1,421.5,259.97)" ><tspan x="-41.6" y="0" class="c">Professor
+</tspan></text><path class="d" d="m339 269.3h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,281.83)" ><tspan x="0" y="0" class="e">-ID_Professor: String
+</tspan></text><path class="d" d="m339 285.3h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,297.83)" ><tspan x="0" y="0" class="e">-Nachname: String
+</tspan></text><path class="d" d="m339 301.3h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,313.83)" ><tspan x="0" y="0" class="e">-Vorname: String
+</tspan></text><path class="d" d="m339 317.3h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,329.83)" ><tspan x="0" y="0" class="e">-Grad: String
+</tspan></text><path class="d" d="m339 333.3h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,345.83)" ><tspan x="0" y="0" class="e">-Spezialität: String
+</tspan></text><path class="d" d="m339 349.3h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,361.83)" ><tspan x="0" y="0" class="e">-Universität: String
+</tspan></text><path class="d" d="m339 365.3h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,377.83)" ><tspan x="0" y="0" class="e">-Niederlassung: String
+</tspan></text><path class="d" d="m339 381.3h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,393.83)" ><tspan x="0" y="0" class="e">-Studentennummer: String
+</tspan></text><path class="d" d="m339 399.3h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,411.83)" ><tspan x="0" y="0" class="e">+Profil_anzeigen()
+</tspan></text><path class="d" d="m339 415.3h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,427.83)" ><tspan x="0" y="0" class="e">+Note_bewerten()
+</tspan></text><path class="d" d="m339 431.3h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,443.83)" ><tspan x="0" y="0" class="e">+Verteidigungen_anzeigen()
+</tspan></text><path class="d" d="m339 447.3h166v16h-166z"/><path class="d" d="m367 615h61v32h-61z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-19.1" y="0" class="f">1..n
+</tspan></text><path class="d" d="m378 482h39v32h-39z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-19.1" y="0" class="f">1..n
+</tspan></text><path class="d" d="m543 713h39v43h-39z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-19.1" y="0" class="f">1..n
+</tspan></text><path class="d" d="m824 604h39v32h-39z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-6.4" y="0" class="f">1
+</tspan></text><path class="d" d="m282 713h39v32h-39z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-6.4" y="0" class="f">1
+</tspan></text><path class="b" d="m80.6 401.7v-4.8q0-4.9 10-4.9h155.4q10 0 10 10v343q0 10 10 10h55"/><path class="d" d="m85 351h39v34.2h-39z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-6.4" y="0" class="f">1
+</tspan></text><path class="b" d="m422 659v-177.3"/><path class="a" d="m339 1h166v187h-166z"/><path class="b" d="m339 24.9h166"/><path class="b" d="m339 109.9h166"/><text style="transform:matrix(1,0,0,1,421.5,18.5)" ><tspan x="-29.9" y="0" class="c">Nutzer
+</tspan></text><path class="d" d="m339 27.9h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,40.36)" ><tspan x="0" y="0" class="e">-ID: int
+</tspan></text><path class="d" d="m339 43.9h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,56.36)" ><tspan x="0" y="0" class="e">-Email: string
+</tspan></text><path class="d" d="m339 59.9h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,72.36)" ><tspan x="0" y="0" class="e">-Passwort: string
+</tspan></text><path class="d" d="m339 75.9h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,88.36)" ><tspan x="0" y="0" class="e">-Rolle: int
+</tspan></text><path class="d" d="m339 91.9h166v16h-166z"/><path class="d" d="m339 109.9h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,122.36)" ><tspan x="0" y="0" class="e">+Authentifizieren()
+</tspan></text><path class="d" d="m339 125.9h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,138.36)" ><tspan x="0" y="0" class="e">+Abmelden()
+</tspan></text><path class="d" d="m339 141.9h166v16h-166z"/><text style="transform:matrix(1,0,0,1,345.5,154.36)" ><tspan x="0" y="0" class="e">+Passwort_ändern()
+</tspan></text><path class="b" d="m422 201.1v41.4"/><path fill-rule="evenodd" class="b" d="m422 189.1l6 12h-12z"/><path class="b" d="m325.9 94.5h-258.1q-10 0-10 10v302.1"/><path fill-rule="evenodd" class="b" d="m337.9 94.5l-12 6v-12z"/><path class="b" d="m518.1 95.7l327.9 4.2q10 0.1 10.1 10.1l1 174.5"/><path fill-rule="evenodd" class="b" d="m506.1 95.6l12.1-5.9-0.2 12z"/><path class="a" d="m1 850.5h166v97.5h-166z"/><path class="b" d="m1 874.4h166"/><text style="transform:matrix(1,0,0,1,83.5,868.02)" ><tspan x="-60.1" y="0" class="c">Projektthema
+</tspan></text><path class="d" d="m1 877.4h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,889.88)" ><tspan x="0" y="0" class="e">-ID: int
+</tspan></text><path class="d" d="m1 893.4h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,905.88)" ><tspan x="0" y="0" class="e">-Studentsnummer: String
+</tspan></text><path class="d" d="m1 909.4h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,921.88)" ><tspan x="0" y="0" class="e">-Projektthema: String
+</tspan></text><path class="d" d="m1 925.4h166v16h-166z"/><text style="transform:matrix(1,0,0,1,7.5,937.88)" ><tspan x="0" y="0" class="e">-Zustand: bool
+</tspan></text><path class="b" d="m84 625.8v224.7"/><path class="d" d="m58 625.8h15v32h-15z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-6.4" y="0" class="f">1
+</tspan></text><path class="d" d="m58 809h15v32h-15z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-6.4" y="0" class="f">1
+</tspan></text><path class="b" d="m167 899.2h245q10 0 10-10v-48.2"/><path class="d" d="m180 905h15v32h-15z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-6.4" y="0" class="f">1
+</tspan></text><path class="d" d="m402 851h15v32h-15z"/><text style="transform:matrix(1,0,0,1,.5,.5)" ><tspan x="-6.4" y="0" class="f">1
+</tspan></text><path class="g" d="m523 496h144v129.8h-144z"/><path class="b" d="m523 514.8h144"/><text style="transform:matrix(1,0,0,1,594.5,509.5)" ><tspan x="-36.8" y="0" class="h">Beziehung
+</tspan></text><path class="d" d="m523 517.8h144v16h-144z"/><text style="transform:matrix(1,0,0,1,529.5,530.26)" ><tspan x="0" y="0" class="e">-ID : int
+</tspan></text><path class="d" d="m523 533.8h144v16h-144z"/><text style="transform:matrix(1,0,0,1,529.5,546.26)" ><tspan x="0" y="0" class="e">-Professor_name : String
+</tspan></text><path class="d" d="m523 549.8h144v16h-144z"/><text style="transform:matrix(1,0,0,1,529.5,562.26)" ><tspan x="0" y="0" class="e">-ID_Verteidigung : int
+</tspan></text><path class="i" d="m421.3 561.7l102-0.7"/><path class="b" d="m523 750h324.8q10 0 10-10v-136.2"/><path class="b" d="m80.6 401.7v-4.8q0-4.9 10-4.9h155.4q10 0 10 10v343q0 10 10 10h55"/><path class="b" d="m422 659v-177.3"/><path class="b" d="m422 201.1v41.4"/><path fill-rule="evenodd" class="b" d="m422 189.1l6 12h-12z"/><path class="b" d="m325.9 94.5h-258.1q-10 0-10 10v302.1"/><path fill-rule="evenodd" class="b" d="m337.9 94.5l-12 6v-12z"/><path class="b" d="m518.1 95.7l327.9 4.2q10 0.1 10.1 10.1l1 174.5"/><path fill-rule="evenodd" class="b" d="m506.1 95.6l12.1-5.9-0.2 12z"/><path class="b" d="m84 625.8v224.7"/><path class="b" d="m167 899.2h245q10 0 10-10v-48.2"/><path class="i" d="m421.3 561.7l102-0.7"/><path class="b" d="m523 750h324.8q10 0 10-10v-136.2"/></svg>
