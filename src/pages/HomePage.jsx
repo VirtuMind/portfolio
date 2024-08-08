@@ -14,30 +14,36 @@ import reactIcon from './../../assets/skills-icons/react.svg';
 import dotnetIcon from './../../assets/skills-icons/dotnet.png';
 import azureIcon from './../../assets/skills-icons/azure.png';
 import jwtIcon from './../../assets/skills-icons/jwt2.svg';
-import githubIcon from './../../assets/github.png';
+import githubIcon from './../../assets/icons/github.png';
+import wavingHand from './../../assets/icons/waving-hand.png';
+import resumeIcon from './../../assets/icons/resume.png';
+import linkedinIcon from './../../assets/icons/linkedin.png';
+import emailIcon from './../../assets/icons/email.png';
+import linkedinSquaredIcon from './../../assets/icons/linkedin-squared.png';
+import phoneIcon from './../../assets/icons/phone-call.png';
+import foreignIcon from './../../assets/icons/foreign.png';
+import codingIcon from './../../assets/icons/coding.png';
+import arrowIcon from './../../assets/icons/arrow.png';
 import portrait from './../../assets/portrait.png';
-import wavingHand from './../../assets/waving-hand.png';
-import resumeIcon from './../../assets/resume.png';
-import linkedinIcon from './../../assets/linkedin.png';
-import cv_de from './../../assets/Lebenslauf_Younes_Khoubaz.pdf';
-import cv_en from './../../assets/Resume_Younes_Khoubaz.pdf';
-import cv_fr from './../../assets/CV_Younes_Khoubaz.pdf';
-import emailIcon from './../../assets/email.png';
-import linkedinSquaredIcon from './../../assets/linkedin-squared.png';
-import phoneIcon from './../../assets/phone-call.png';
-import project1Cover from './../../assets/project1.png';
-import project2Cover from './../../assets/project2.png';
-import project3Cover from './../../assets/project3.png';
-import foreignIcon from './../../assets/foreign.png';
-import codingIcon from './../../assets/coding.png';
-import arrowIcon from './../../assets/arrow.png';
+import project1Cover from './../../assets/court-management-system/showcase.png';
+import project2Cover from './../../assets/graduation-theses-platform/showcase.png';
+import project3Cover from './../../assets/coursify/showcase.png';
+import project4Cover from './../../assets/otas/showcase.png';
+import cv_de from './../../assets/resumes/Lebenslauf_Younes_Khoubaz.pdf';
+import cv_en from './../../assets/resumes/Resume_Younes_Khoubaz.pdf';
+import cv_fr from './../../assets/resumes/CV_Younes_Khoubaz.pdf';
 import HomeHeader from '../containers/HomeHeader';
 import CopyrightFooter from '../containers/CopyrightFooter';
 import { Slide } from 'react-slideshow-image';
 import SkillCard from '../components/SkillCard';
 import Lightbox from 'yet-another-react-lightbox';
 import { useState } from 'react';
-import { courtProjectSlides } from '../components/ProjectsSlides';
+import {
+  courtProjectSlides,
+  graduationThesesSlides,
+  coursifySlides,
+  otasSlides,
+} from '../components/ProjectsSlides';
 import { Captions, Zoom, Fullscreen } from 'yet-another-react-lightbox/plugins';
 import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/captions.css';
@@ -46,6 +52,7 @@ import Chip from '../components/Chip';
 const HomePage = () => {
   const { t, i18n } = useTranslation();
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentProject, setCurrentProject] = useState(null);
 
   const handleDownloadCV = () => {
     switch (i18n.language) {
@@ -163,7 +170,7 @@ const HomePage = () => {
             <SkillCard name="Javascript" img={jsIcon} />
             <SkillCard name="C#" img={csharpIcon} />
             <SkillCard name="ReactJS" img={reactIcon} />
-            <SkillCard name=".NET Core" img={dotnetIcon} />
+            <SkillCard name=".NET 8" img={dotnetIcon} />
             <SkillCard name="Java" img={javaIcon} />
             <SkillCard name="CSS" img={cssIcon} />
             {/* <SkillCard name="HTML" img={htmlIcon} />
@@ -180,13 +187,198 @@ const HomePage = () => {
       <section id="projects">
         <h1 className="header">{t('completedProjects')}</h1>
         <Slide {...properties}>
-          {/* Praktikumsprojekt Berufungsgericht */}
+          {/* Coursify */}
           <div className="project-widget-container">
             <div className="project-widget">
-              <div className="project-img-title-container">
+              <div className="project-thumbnail-title-container">
                 <div
-                  className="project-img-container"
-                  onClick={() => setLightboxOpen(true)}
+                  className="project-thumbnail-container"
+                  onClick={() => {
+                    setCurrentProject(coursifySlides);
+                    setLightboxOpen(true);
+                  }}
+                >
+                  <img src={project3Cover} />
+                  <div className="project-overlay-text">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="3em"
+                      height="3em"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#EBEBEB"
+                        d="M5 3h14v11h-2v2h-2v2H1V7h2V5h2zm13 10V4H6v9zm-3-4c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2m1 6v-1H5V6H4v9zM7 6l10 6H7zm7 11v-1H3V8H2v9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <p>{t('coursifyProject.title')}</p>
+              </div>
+
+              <div className="project-details">
+                <div className="chips-container">
+                  <Chip text="ReactJS" color="#58C4DC" />
+                  <Chip text="MUI Joy" color="#0069D2" />
+                  <Chip text="Styled Components" color="#BF4F74" />
+                  <Chip text=".NET 8" color="#613494" />
+                  <Chip text="T-SQL" color="#EB1A28" />
+                  <Chip text="JWT" color="#000000" />
+                </div>
+                <p>{t('coursifyProject.description')}</p>
+                <div className="links-container">
+                  <div className="link-container">
+                    <a
+                      href="https://github.com/younes-47/coursify-frontend"
+                      className="underline"
+                      target="_blank"
+                    >
+                      <img
+                        src={codingIcon}
+                        alt="Coding Icon"
+                        className="icon"
+                      />
+                      &nbsp;{t('frontend')}
+                    </a>
+                  </div>
+                  <div className="link-container">
+                    <a
+                      href="https://github.com/younes-47/coursify-backend"
+                      className="underline"
+                      target="_blank"
+                    >
+                      <img
+                        src={codingIcon}
+                        alt="Coding Icon"
+                        className="icon"
+                      />
+                      &nbsp;{t('backend')}
+                    </a>
+                  </div>
+                  <div
+                    className="link-container"
+                    onClick={() => {
+                      setCurrentProject(coursifySlides);
+                      setLightboxOpen(true);
+                    }}
+                  >
+                    <a className="underline">
+                      <img src={arrowIcon} alt="Arrow Icon" className="icon" />
+                      &nbsp;{t('moreDetails')}
+                    </a>
+                  </div>
+                  <div className="waving-link-container">
+                    <a
+                      className="waving-link underline"
+                      href="https://coursify.azurewebsites.net/"
+                      target="_blank"
+                    >
+                      <img
+                        src={foreignIcon}
+                        alt="External link Icon"
+                        className="icon"
+                      />
+                      &nbsp;{t('liveDemo')}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* OTAS */}
+          <div className="project-widget-container">
+            <div className="project-widget">
+              <div className="project-thumbnail-title-container">
+                <div
+                  className="project-thumbnail-container"
+                  onClick={() => {
+                    setCurrentProject(otasSlides);
+                    setLightboxOpen(true);
+                  }}
+                >
+                  <img src={project4Cover} />
+                  <div className="project-overlay-text">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="3em"
+                      height="3em"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#EBEBEB"
+                        d="M5 3h14v11h-2v2h-2v2H1V7h2V5h2zm13 10V4H6v9zm-3-4c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2m1 6v-1H5V6H4v9zM7 6l10 6H7zm7 11v-1H3V8H2v9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <p>{t('otasProject.title')}</p>
+              </div>
+
+              <div className="project-details">
+                <div className="chips-container">
+                  <Chip text="ReactJS" color="#58C4DC" />
+                  <Chip text="MUI" color="#0069D2" />
+                  <Chip text=".NET 6" color="#613494" />
+                  <Chip text="T-SQL" color="#EB1A28" />
+                  <Chip text="JWT" color="#000000" />
+                </div>
+                <p>{t('otasProject.description')}</p>
+                <div className="links-container">
+                  <div className="link-container">
+                    <a
+                      href="https://github.com/younes-47/otas-frontend"
+                      className="underline"
+                      target="_blank"
+                    >
+                      <img
+                        src={codingIcon}
+                        alt="Coding Icon"
+                        className="icon"
+                      />
+                      &nbsp;{t('frontend')}
+                    </a>
+                  </div>
+                  <div className="link-container">
+                    <a
+                      href="https://github.com/younes-47/otas-backend"
+                      className="underline"
+                      target="_blank"
+                    >
+                      <img
+                        src={codingIcon}
+                        alt="Coding Icon"
+                        className="icon"
+                      />
+                      &nbsp;{t('backend')}
+                    </a>
+                  </div>
+
+                  <div className="waving-link-container">
+                    <a
+                      className="waving-link underline"
+                      onClick={() => {
+                        setCurrentProject(otasSlides);
+                        setLightboxOpen(true);
+                      }}
+                    >
+                      <img src={arrowIcon} alt="Arrow Icon" className="icon" />
+                      &nbsp;{t('moreDetails')}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Court Management System */}
+          <div className="project-widget-container">
+            <div className="project-widget">
+              <div className="project-thumbnail-title-container">
+                <div
+                  className="project-thumbnail-container"
+                  onClick={() => {
+                    setCurrentProject(courtProjectSlides);
+                    setLightboxOpen(true);
+                  }}
                 >
                   <img src={project1Cover} />
                   <div className="project-overlay-text">
@@ -227,7 +419,7 @@ const HomePage = () => {
                 <div className="links-container">
                   <div className="link-container">
                     <a
-                      href="https://github.com/younes-47/Praktikumsprojekt"
+                      href="https://github.com/younes-47/court-management-system"
                       className="underline"
                       target="_blank"
                     >
@@ -236,32 +428,62 @@ const HomePage = () => {
                         alt="Coding Icon"
                         className="icon"
                       />
-                      &nbsp;Source Code
+                      &nbsp;{t('sourceCode')}
                     </a>
                   </div>
                   <div
                     className="waving-link-container"
-                    onClick={() => setLightboxOpen(true)}
+                    onClick={() => {
+                      setCurrentProject(courtProjectSlides);
+                      setLightboxOpen(true);
+                    }}
                   >
                     <a className="waving-link underline">
                       <img src={arrowIcon} alt="Coding Icon" className="icon" />
-                      &nbsp;More Details
+                      &nbsp;{t('moreDetails')}
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* Abschlussprojekt eine Plattform  */}
+          {/* Graduation Theses Platform  */}
           <div className="project-widget-container">
             <div className="project-widget">
-              <div className="project-img-title-container">
-                <div className="project-img-container">
-                  <img src={project2Cover} alt="" />
+              <div className="project-thumbnail-title-container">
+                <div
+                  className="project-thumbnail-container"
+                  onClick={() => {
+                    setCurrentProject(graduationThesesSlides);
+                    setLightboxOpen(true);
+                  }}
+                >
+                  <img src={project2Cover} />
+                  <div className="project-overlay-text">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="3em"
+                      height="3em"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#EBEBEB"
+                        d="M5 3h14v11h-2v2h-2v2H1V7h2V5h2zm13 10V4H6v9zm-3-4c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2m1 6v-1H5V6H4v9zM7 6l10 6H7zm7 11v-1H3V8H2v9z"
+                      />
+                    </svg>
+                  </div>
                 </div>
                 <p>{t('thesesPlatformProject.title')}</p>
               </div>
+
               <div className="project-details">
+                <div className="chips-container">
+                  <Chip text="Laravel" color="#FF2D20" />
+                  <Chip text="PHP" color="#7A86B8" />
+                  <Chip text="jQuerry" color="#00758F" />
+                  <Chip text="Bootstrap" color="#6E2CF3" />
+                  <Chip text="MySQL" color="#00758F" />
+                </div>
                 <p>
                   {t('thesesPlatformProject.description1')}
                   <a
@@ -274,55 +496,30 @@ const HomePage = () => {
                   {t('thesesPlatformProject.description3')}
                 </p>
                 <div className="links-container">
-                  <div className="code-link-container">
+                  <div className="link-container">
                     <a
-                      href="https://github.com/younes-47/Abschlussprojekt"
+                      href="https://github.com/younes-47/graduation-theses-platform"
+                      className="underline"
                       target="_blank"
-                      className="code-link underline"
                     >
-                      <img src={codingIcon} alt="" className="icon" />
-                      &nbsp;Source Code
+                      <img
+                        src={codingIcon}
+                        alt="Coding Icon"
+                        className="icon"
+                      />
+                      &nbsp;{t('sourceCode')}
                     </a>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Praktikumsprojekt Reisebüro-landingpage */}
-          <div className="project-widget-container">
-            <div className="project-widget">
-              <div className="project-img-title-container">
-                <div className="project-img-container">
-                  <img src={project3Cover} alt="" />
-                </div>
-                <p>Reisebüro Landingpage</p>
-              </div>
-              <div className="project-details">
-                <p>
-                  Als Praktikant bei
-                  <a
-                    href="https://www.linkedin.com/company/digiload3/"
-                    target="_blank"
-                    style={{ color: '#e69600', textDecoration: 'none' }}
+                  <div
+                    className="waving-link-container"
+                    onClick={() => {
+                      setCurrentProject(graduationThesesSlides);
+                      setLightboxOpen(true);
+                    }}
                   >
-                    &nbsp;digiload&nbsp;
-                  </a>
-                  Unternehmen und während meines ersten Jahres an der EST
-                  Hochschule wurde ich beauftragt, eine Landing Page für ein
-                  Reisebüro zu entwickeln. Die Landing Page dient dazu, die
-                  Informationen des Reisebüros, ihre Reiseziele und Preise
-                  darzustellen, die Möglichkeit, sie zu kontaktieren und eine
-                  Buchung vorzunehmen.
-                </p>
-                <div className="links-container">
-                  <div className="code-link-container">
-                    <a
-                      href="https://github.com/younes-47/Reiseburo-Landingpage"
-                      className="code-link underline"
-                      target="_blank"
-                    >
-                      <img src={codingIcon} alt="" className="icon" />
-                      &nbsp;Source Code
+                    <a className="waving-link underline">
+                      <img src={arrowIcon} alt="Arrow Icon" className="icon" />
+                      &nbsp;{t('moreDetails')}
                     </a>
                   </div>
                 </div>
@@ -372,7 +569,7 @@ const HomePage = () => {
         captions={{ showToggle: true }}
         open={lightboxOpen}
         close={() => setLightboxOpen(false)}
-        slides={courtProjectSlides}
+        slides={currentProject}
       />
     </>
   );

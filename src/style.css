@@ -473,15 +473,18 @@ section#about {
 }
 
 .project-thumbnail-container {
+  height: 250px;
+  width: 250px;
   cursor: pointer;
   position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border-radius: 22px;
   overflow: visible;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-  width: auto;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .project-thumbnail-container::before {
@@ -492,7 +495,7 @@ section#about {
   width: 90%;
   height: 90%;
   transform: translate(-50%);
-  background: #ffb066;
+  background: #b0b0b0; /* Darker */
   z-index: 2;
   transform-origin: bottom;
   border-radius: inherit;
@@ -507,7 +510,7 @@ section#about {
   width: 80%;
   height: 80%;
   transform: translate(-50%);
-  background: #ffd8a8;
+  background: #d7d7d7; /* Lighter */
   z-index: 1;
   transform-origin: bottom;
   border-radius: inherit;
@@ -551,7 +554,7 @@ section#about {
 .project-thumbnail-container:hover img {
   /* transform: scale(1.1); */
   filter: blur(1px) brightness(0.5);
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
 }
 
 .project-overlay-text {
