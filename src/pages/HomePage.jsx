@@ -221,6 +221,7 @@ const HomePage = () => {
                   <Chip text="ReactJS" color="#58C4DC" />
                   <Chip text="MUI Joy" color="#0069D2" />
                   <Chip text="Styled Components" color="#BF4F74" />
+                  <Chip text="C#" color="#9F73D9" />
                   <Chip text=".NET 8" color="#613494" />
                   <Chip text="T-SQL" color="#EB1A28" />
                   <Chip text="JWT" color="#000000" />
@@ -319,6 +320,7 @@ const HomePage = () => {
                   <Chip text="ReactJS" color="#58C4DC" />
                   <Chip text="MUI" color="#0069D2" />
                   <Chip text=".NET 6" color="#613494" />
+                  <Chip text="C#" color="#9F73D9" />
                   <Chip text="T-SQL" color="#EB1A28" />
                   <Chip text="JWT" color="#000000" />
                 </div>
@@ -402,6 +404,7 @@ const HomePage = () => {
                 <div className="chips-container">
                   <Chip text="Laravel" color="#FF2D20" />
                   <Chip text="PHP" color="#7A86B8" />
+                  <Chip text="Bootstrap" color="#6E2CF3" />
                   <Chip text="jQuerry" color="#00758F" />
                   <Chip text="MySQL" color="#00758F" />
                 </div>
