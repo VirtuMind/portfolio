@@ -222,11 +222,24 @@ nav {
 
 section {
   padding-top: 6vh;
-  height: 94vh;
+  min-height: 94vh;
   margin: 0;
   box-sizing: border-box;
+  height: auto;
+}
+
+section#profile,
+section#contact,
+section#projects {
   min-height: fit-content;
 }
+
+section#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 section#about {
   padding-top: 6vh; /* Top padding for spacing */
   padding-bottom: 2vh; /* Add bottom padding for breathing space */
@@ -744,6 +757,7 @@ section#about {
 .copyright {
   text-align: center;
   margin-top: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 .copyright p {

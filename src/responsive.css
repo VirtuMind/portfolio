@@ -212,10 +212,6 @@ body {
     margin-left: 1rem;
     text-align: center;
   }
-
-  .copyright {
-    margin-bottom: 1.5rem;
-  }
 }
 
 @media (max-width: 385px) {
