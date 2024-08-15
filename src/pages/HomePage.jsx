@@ -1,5 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import htmlIcon from '/assets/skills-icons/html.png';
+import reduxIcon from '/assets/skills-icons/redux.svg';
+import reduxSagaIcon from '/assets/skills-icons/redux-saga.svg';
+import entityFrameworkIcon from '/assets/skills-icons/EF.png';
 import phpIcon from '/assets/skills-icons/php.png';
 import umlIcon from '/assets/skills-icons/uml2.svg';
 import cssIcon from '/assets/skills-icons/css.png';
@@ -170,11 +173,13 @@ const HomePage = () => {
             <SkillCard name="Javascript" img={jsIcon} />
             <SkillCard name="C#" img={csharpIcon} />
             <SkillCard name="ReactJS" img={reactIcon} />
+            <SkillCard name="Redux" img={reduxIcon} />
+            <SkillCard name="Redux Saga" img={reduxSagaIcon} />
             <SkillCard name=".NET 8" img={dotnetIcon} />
+            <SkillCard name="Entity Framework" img={entityFrameworkIcon} />
             <SkillCard name="Java" img={javaIcon} />
+            <SkillCard name="HTML" img={htmlIcon} />
             <SkillCard name="CSS" img={cssIcon} />
-            {/* <SkillCard name="HTML" img={htmlIcon} />
-            <SkillCard name="CSS" img={cssIcon} /> */}
             <SkillCard name="Azure Cloud" img={azureIcon} />
             <SkillCard name="JWT" img={jwtIcon} />
             <SkillCard name="Git" img={gitIcon} />
@@ -219,6 +224,8 @@ const HomePage = () => {
               <div className="project-details">
                 <div className="chips-container">
                   <Chip text="ReactJS" color="#58C4DC" />
+                  <Chip text="Redux" color="#764ABC" />
+                  <Chip text="Redux Saga" color="#89d96d" />
                   <Chip text="MUI Joy" color="#0069D2" />
                   <Chip text="Styled Components" color="#BF4F74" />
                   <Chip text="C#" color="#9F73D9" />
@@ -318,6 +325,8 @@ const HomePage = () => {
               <div className="project-details">
                 <div className="chips-container">
                   <Chip text="ReactJS" color="#58C4DC" />
+                  <Chip text="Redux" color="#764ABC" />
+                  <Chip text="Redux Saga" color="#89d96d" />
                   <Chip text="MUI" color="#0069D2" />
                   <Chip text=".NET 6" color="#613494" />
                   <Chip text="C#" color="#9F73D9" />
