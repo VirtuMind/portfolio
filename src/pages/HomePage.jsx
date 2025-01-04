@@ -145,7 +145,7 @@ const HomePage = () => {
               />
             </a>
             <a
-              href="https://github.com/younes-47"
+              href="https://github.com/VirtuMind"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -237,7 +237,7 @@ const HomePage = () => {
                 <div className="links-container">
                   <div className="link-container">
                     <a
-                      href="https://github.com/younes-47/coursify-frontend"
+                      href="https://github.com/VirtuMind/coursify-frontend"
                       className="underline"
                       target="_blank"
                     >
@@ -251,7 +251,7 @@ const HomePage = () => {
                   </div>
                   <div className="link-container">
                     <a
-                      href="https://github.com/younes-47/coursify-backend"
+                      href="https://github.com/VirtuMind/coursify-backend"
                       className="underline"
                       target="_blank"
                     >
@@ -337,7 +337,7 @@ const HomePage = () => {
                 <div className="links-container">
                   <div className="link-container">
                     <a
-                      href="https://github.com/younes-47/otas-frontend"
+                      href="https://github.com/VirtuMind/otas-frontend"
                       className="underline"
                       target="_blank"
                     >
@@ -351,7 +351,7 @@ const HomePage = () => {
                   </div>
                   <div className="link-container">
                     <a
-                      href="https://github.com/younes-47/otas-backend"
+                      href="https://github.com/VirtuMind/otas-backend"
                       className="underline"
                       target="_blank"
                     >
@@ -431,7 +431,7 @@ const HomePage = () => {
                 <div className="links-container">
                   <div className="link-container">
                     <a
-                      href="https://github.com/younes-47/court-management-system"
+                      href="https://github.com/VirtuMind/court-management-system"
                       className="underline"
                       target="_blank"
                     >
@@ -510,7 +510,7 @@ const HomePage = () => {
                 <div className="links-container">
                   <div className="link-container">
                     <a
-                      href="https://github.com/younes-47/graduation-theses-platform"
+                      href="https://github.com/VirtuMind/graduation-theses-platform"
                       className="underline"
                       target="_blank"
                     >
