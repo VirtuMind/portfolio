@@ -52,10 +52,16 @@ import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/captions.css';
 import Chip from '../components/Chip';
 
+interface SlideDetails {
+  src: string;
+  title: string;
+  description?: string;
+}
+
 const HomePage = () => {
   const { t, i18n } = useTranslation();
   const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [currentProject, setCurrentProject] = useState(null);
+  const [currentProject, setCurrentProject] = useState<SlideDetails[]>([]);
 
   const handleDownloadCV = () => {
     switch (i18n.language) {
@@ -162,7 +168,9 @@ const HomePage = () => {
         <h1 className="header">{t('aboutMe')}</h1>
         <div className="about-details-container">
           <div className="text-container">
-            <p>{t('aboutParagraph')}</p>
+            <p>{t('aboutParagraph1')}</p>
+            <br />
+            <p>{t('aboutParagraph2')}</p>
           </div>
         </div>
       </section>
