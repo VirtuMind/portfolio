@@ -1,4 +1,9 @@
-const Chip = ({ color = 'black', text }) => {
+interface ChipProps {
+  color?: string;
+  text: string;
+}
+
+const Chip = ({ color = 'black', text }: ChipProps) => {
   return (
     <div
       className="chip"
