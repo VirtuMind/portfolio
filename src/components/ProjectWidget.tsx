@@ -1,4 +1,10 @@
-const ProjectWidget = ({ imgSrc }) => {
+import { FC } from 'react';
+
+interface ProjectWidgetProps {
+  imgSrc: string;
+}
+
+const ProjectWidget: FC<ProjectWidgetProps> = (props) => {
   return (
     <div className="project-thumbnail-container">
       <div className="project-thumbnail-browser-header">
@@ -52,7 +58,7 @@ const ProjectWidget = ({ imgSrc }) => {
       </div>
 
       <div className="project-thumbnail">
-        <img src={imgSrc} />
+        <img src={props.imgSrc} />
         <div className="project-overlay-text">
           <svg
             xmlns="http://www.w3.org/2000/svg"

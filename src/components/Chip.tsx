@@ -1,9 +1,11 @@
+import { FC } from 'react';
+
 interface ChipProps {
   color?: string;
   text: string;
 }
 
-const Chip = ({ color = 'black', text }: ChipProps) => {
+const Chip: FC<ChipProps> = ({ color = 'black', text }) => {
   return (
     <div
       className="chip"

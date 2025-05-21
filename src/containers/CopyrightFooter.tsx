@@ -1,6 +1,7 @@
+import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const CopyrightFooter = () => {
+const CopyrightFooter: FC = () => {
   const { i18n } = useTranslation();
   const currentYear = new Date().getFullYear();
   return (
