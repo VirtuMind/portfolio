@@ -15,7 +15,13 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "/assets/*": ["public/assets/*"]
+      "@components/*": ["src/components/*"],
+      "@containers/*": ["src/containers/*"],
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["src/assets/*"],
+      "@icons/*": ["src/assets/icons/*"],
+      "@hooks/*": ["utils/hooks/*"],
+      "@utils/*": ["utils/*"]
     }
   },
   "include": ["src", "vite.config.ts", "custom.d.ts"]
