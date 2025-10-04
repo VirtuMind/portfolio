@@ -36,10 +36,10 @@ export default function ResumePage() {
   };
 
   return (
-    <main className="container max-w-4xl mx-auto px-4 pt-12 pb-16 opacity-0 animate-slide-up">
+    <>
       <BackLink />
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8 opacity-0 animate-slide-up">
-        <h1 className="font-mono text-4xl md:text-4xl">{t.resume.title}</h1>
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8 ">
+        <h1 className="font-mono text-4xl">{t.resume.title}</h1>
 
         <div className="flex justify-between md:items-center gap-4 ">
           {/* Language Selector */}
@@ -68,7 +68,9 @@ export default function ResumePage() {
       </div>
 
       {/* PDF Viewer */}
-      <PDFViewer pdfUrl={resumeUrls[selectedLang]} />
-    </main>
+      <div className="opacity-0 animate-slide-up">
+        <PDFViewer pdfUrl={resumeUrls[selectedLang]} />
+      </div>
+    </>
   );
 }

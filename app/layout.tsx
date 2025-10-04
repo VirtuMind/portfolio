@@ -37,7 +37,6 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
       className={`${dmSans.variable} ${spaceGrotesk.variable} ${ephesis.variable}`}
     >
       <body className="font-sans antialiased">
@@ -45,7 +44,9 @@ export default function RootLayout({
           <LanguageProvider>
             <div className="min-h-screen">
               <Header />
-              {children}
+              <main className="container max-w-3xl mx-auto px-4 py-12 mb-30 md:mb-0">
+                {children}
+              </main>
             </div>
           </LanguageProvider>
         </ThemeProvider>

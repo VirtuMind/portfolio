@@ -239,14 +239,14 @@
   .animate-draw-y {
     stroke-dasharray: 120;
     stroke-dashoffset: 120;
-    animation: draw 7s ease-out forwards;
+    animation: draw 5s ease-out forwards;
   }
 
   .animate-draw-k {
     stroke-dasharray: 120;
     stroke-dashoffset: 120;
-    animation: draw 7s ease-out forwards;
-    animation-delay: 5s;
+    animation: draw 5s ease-out forwards;
+    animation-delay: 2s;
   }
 
   /* Slide Up Animation */
