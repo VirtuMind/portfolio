@@ -40,6 +40,7 @@
   --font-sans: "DM Sans", "DM Sans Fallback";
   --font-mono: "Space Grotesk", "Space Grotesk Fallback";
   --font-serif: "Source Serif 4", "Source Serif 4 Fallback";
+
   --shadow-x: 0px;
   --shadow-y: 4px;
   --shadow-blur: 12px;
@@ -90,8 +91,9 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-dm-sans);
+  --font-mono: var(--font-space-grotesk);
+  --font-handwriting: var(--font-ephesis);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -226,17 +228,55 @@
   }
 }
 
-/* Custom glassmorphism utility classes */
-.glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
+@layer utilities {
+  /* Logo Animation */
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
 
-.dark .glass {
-  background: rgba(20, 20, 20, 0.4);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  .animate-draw-y {
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120;
+    animation: draw 7s ease-out forwards;
+  }
+
+  .animate-draw-k {
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120;
+    animation: draw 7s ease-out forwards;
+    animation-delay: 5s;
+  }
+
+  /* Slide Up Animation */
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-slide-up {
+    animation: slideUp 1s ease-out forwards;
+  }
+
+  /* Custom glassmorphism utility classes */
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .dark .glass {
+    background: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }

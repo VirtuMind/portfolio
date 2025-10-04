@@ -1,4 +1,4 @@
-export type Language = "en" | "fr" | "de"
+export type Language = "en" | "fr" | "de";
 
 export const translations = {
   en: {
@@ -100,8 +100,8 @@ export const translations = {
       certification: "Zertifizierung",
     },
   },
-}
+};
 
 export function getTranslations(lang: Language) {
-  return translations[lang] || translations.en
+  return translations[lang] || translations.en;
 }

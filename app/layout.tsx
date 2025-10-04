@@ -1,9 +1,10 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { DM_Sans, Space_Grotesk } from "next/font/google";
+import { DM_Sans, Space_Grotesk, Ephesis } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/lib/theme-provider";
 import { LanguageProvider } from "@/lib/language-provider";
+import { Header } from "@/components/header";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -17,6 +18,13 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+const ephesis = Ephesis({
+  subsets: ["latin"],
+  variable: "--font-ephesis",
+  display: "swap",
+  weight: "400",
+});
+
 export const metadata: Metadata = {
   title: "Younes Khoubaz - Portfolio",
   description: "Software Developer Portfolio",
@@ -28,10 +36,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
+    <html
+      lang="en"
+      className={`${dmSans.variable} ${spaceGrotesk.variable} ${ephesis.variable}`}
+    >
       <body className="font-sans antialiased">
         <ThemeProvider>
-          <LanguageProvider>{children}</LanguageProvider>
+          <LanguageProvider>
+            <div className="min-h-screen">
+              <Header />
+              {children}
+            </div>
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>
