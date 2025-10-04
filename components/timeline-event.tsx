@@ -1,60 +1,71 @@
-"use client"
+"use client";
 
-import { Briefcase, GraduationCap, Award } from "lucide-react"
-import type { EventType } from "@/lib/history-data"
-import { Badge } from "@/components/ui/badge"
+import { Calendar, MapPin } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 interface TimelineEventProps {
-  title: string
-  dateRange: string
-  description: string
-  type: EventType
-  typeLabel: string
+  title: string;
+  dateRange: string;
+  location: string;
+  description: string;
+  type: string;
 }
 
-const eventIcons = {
-  work: Briefcase,
-  education: GraduationCap,
-  certification: Award,
-}
-
-const eventColors = {
-  work: "bg-accent",
-  education: "bg-secondary",
-  certification: "bg-primary",
-}
-
-export function TimelineEvent({ title, dateRange, description, type, typeLabel }: TimelineEventProps) {
-  const Icon = eventIcons[type]
-
+export function TimelineEvent({
+  title,
+  dateRange,
+  description,
+  location,
+  type,
+}: TimelineEventProps) {
   return (
-    <div className="relative pl-8 pb-12 group">
+    <div className="relative pl-8 pb-12 last:pb-0 group">
       {/* Timeline Line */}
-      <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-border group-last:hidden" />
+      <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-primary/20 group-last:hidden" />
 
-      {/* Timeline Dot */}
-      <div
-        className={`absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full ${eventColors[type]} border-4 border-background`}
-      />
+      {/* Timeline Dot with glow effect */}
+      <div className="absolute left-0 top-2 -translate-x-1/2 z-10">
+        <div className="w-4 h-4 rounded-full bg-primary border-4 border-background shadow-lg shadow-primary/50 group-hover:shadow-primary group-hover:scale-125 transition-all duration-300" />
+      </div>
 
-      {/* Content */}
-      <div className="glass p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
-        <div className="flex items-start justify-between gap-4 mb-2">
-          <div className="flex items-center gap-3">
-            <div className={`p-2 rounded-lg ${eventColors[type]}/20`}>
-              <Icon className="h-5 w-5 text-accent-foreground" />
+      {/* Content Card */}
+      <div className="relative glass rounded-xl p-6 border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-primary/20 group-hover:translate-x-1">
+        {/* Header with title and badge */}
+        <div className="mb-4">
+          {/* Title and Badge Row */}
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+            <h3 className="font-mono text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+              {title}
+            </h3>
+
+            {/* Badge - appears below title on mobile, next to it on desktop */}
+            <Badge
+              variant="outline"
+              className="shrink-0 self-start sm:self-auto border-primary/30 bg-primary/5 text-primary font-semibold px-3 py-1 hover:bg-primary/10 transition-colors"
+            >
+              {type}
+            </Badge>
+          </div>
+
+          {/* Date and Location with icons - full width */}
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm">
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Calendar className="h-4 w-4 text-primary/70" />
+              <span className="font-medium">{dateRange}</span>
             </div>
-            <div>
-              <h3 className="font-mono text-xl font-bold">{title}</h3>
-              <p className="text-sm text-muted-foreground">{dateRange}</p>
+            <div className="hidden sm:block w-1 h-1 rounded-full bg-muted-foreground/30" />
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <MapPin className="h-4 w-4 text-primary/70" />
+              <span className="font-medium">{location}</span>
             </div>
           </div>
-          <Badge variant="outline" className="shrink-0">
-            {typeLabel}
-          </Badge>
         </div>
-        <p className="text-muted-foreground leading-relaxed mt-4">{description}</p>
+
+        {/* Description */}
+        <p className="text-muted-foreground leading-relaxed text-base">
+          {description}
+        </p>
       </div>
     </div>
-  )
+  );
 }
