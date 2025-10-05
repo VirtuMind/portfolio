@@ -62,7 +62,7 @@ export default function ProjectsPage() {
             key={project.id}
             className="group relative rounded-2xl border pt-6 md:border-0 md:pt-0"
           >
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row gap-4">
               {/* Image Section with Gallery Effect */}
               <div className="relative w-full md:w-2/5 lg:w-1/3 flex items-center justify-center p-4 ">
                 <div
