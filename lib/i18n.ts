@@ -26,7 +26,7 @@ export const translations = {
           title: "Coursify - Online Course Platform",
           thumbnail: "/coursify/thumbnail.png",
           description:
-            "Coursify is an online course platform designed for beginners to explore new subjects. Users can easily enroll in courses, track their progress, complete quizzes, and download important documents. With an intuitive, fully responsive and engaging interface, Coursify makes learning simple and accessible for everyone.",
+            "Coursify is an online course platform designed for beginners to explore new skills. Users can easily enroll in courses, track their progress, complete quizzes, and download important documents. With an intuitive, fully responsive and engaging interface, Coursify makes learning simple and accessible for everyone.",
           technologies: [
             ".NET 8",
             "C#",
@@ -53,7 +53,7 @@ export const translations = {
           title: "Online Travel Approval System",
           thumbnail: "/otas/thumbnail.png",
           description:
-            "Developed an Online Travel Approval System for Dicastal Morocco Africa, an administrative application that optimizes the management of business travel requests through multiple approval levels (department manager, HR, finance manager, CEO...). The system supports currency calculations in MAD and EUR, allows for approval, return, or rejection at each level, and generates a PDF document summarizing trip details and expenses with digital signatures. It also supports other request types each with tailored approval processes.",
+            "Developed an Online Travel Approval System for Dicastal Morocco Africa, an administrative application that optimizes the management of business travel requests through multiple approval levels (department manager, HR, finance manager, CEO...). The system supports currency calculations in MAD and EUR, allows for approval, return, or rejection at each level, and generates a PDF document summarizing trip details and expenses with digital signatures. It also supports other request types each with tailored approval process.",
           technologies: [".NET 8", "C#", "React", "Redux", "JWT", "SQL Server"],
           links: [
             {
@@ -85,7 +85,7 @@ export const translations = {
           title: "Graduation Projects Management Platform",
           thumbnail: "/graduation-project/thumbnail.png",
           description:
-            "For my graduation project, I developed a full-stack application. A platform that manages graduation projects of students of Ecole Supérieur de Technologie with user authentication and multiple permissions system, where the administrator, professors, and students can log in and access important information as well as perform various tasks.",
+            "For my final graduation project, I engineered a full-stack web platform designed to efficiently manage the graduation projects of students at the Ecole Supérieure de Technologie (EST). The application features secure user authentication and a robust multi-level permissions system, allowing administrators, professors, and students to log in, access critical information, and perform tasks specific to their role.",
           technologies: ["Laravel", "PHP", "Bootstrap", "jQuery", "MySQL"],
           links: [
             {
@@ -181,7 +181,7 @@ export const translations = {
           title: "Coursify - Plateforme de cours en ligne",
           thumbnail: "/coursify/thumbnail.png",
           description:
-            "Coursify est une plateforme de cours en ligne conçue pour les débutants afin d'explorer de nouveaux sujets. Les utilisateurs peuvent facilement s'inscrire à des cours, suivre leur progression, passer des quiz et télécharger des documents importants. Avec une interface intuitive, entièrement responsive et attrayante, Coursify rend l'apprentissage simple et accessible pour tous.",
+            "Coursify est une plateforme de cours en ligne conçue pour les débutants afin d'explorer de nouveaux compétences. Les utilisateurs peuvent facilement s'inscrire à des cours, suivre leur progression, passer des quiz et télécharger des documents importants. Avec une interface intuitive, entièrement responsive et attrayante, Coursify rend l'apprentissage simple et accessible pour tous.",
           technologies: [
             ".NET 8",
             "C#",
@@ -240,7 +240,7 @@ export const translations = {
           title: "Plateforme de gestion des projets de fin d'études",
           thumbnail: "/graduation-project/thumbnail.png",
           description:
-            "Pour mon projet de fin d'études, j'ai développé une application full-stack. Une plateforme qui gère les projets de fin d'études des étudiants de l'Ecole Supérieur de Technologie avec une authentification utilisateur et un système de permissions multiples, où l'administrateur, les professeurs et les étudiants peuvent se connecter et accéder à des informations importantes ainsi qu'effectuer diverses tâches.",
+            "Pour mon projet de fin d'études, j'ai développé une application full-stack. Il s'agit d'une plateforme qui gère les projets de fin d'études des étudiants de l'École Supérieure de Technologie (EST). Elle est dotée d'un système d'authentification des utilisateurs et de permissions multi-niveaux, permettant aux administrateurs, aux professeurs et aux étudiants de se connecter, d'accéder à des informations importantes et d'effectuer diverses tâches.",
           technologies: ["Laravel", "PHP", "Bootstrap", "jQuery", "MySQL"],
           links: [
             {
@@ -395,7 +395,7 @@ export const translations = {
           title: "Platform für die Verwaltung der Diplomarbeiten",
           thumbnail: "/graduation-project/thumbnail.png",
           description:
-            "Für mein Abschlussprojekt habe ich eine Full-Stack-Anwendung entwickelt. Eine Plattform, die Projekte des Studienabschlusses von Studenten der Ecole Supérieur de Technologie mit Benutzerauthentifizierung und Mehrere Berechtigungen System verwaltet, bei der sich der Administrator, die Professoren und die Studenten anmelden und auf wichtige Informationen zugreifen sowie verschiedene Aufgaben ausführen können.",
+            "Für mein Abschlussprojekt habe ich eine Full-Stack-Anwendung entwickelt. Dabei handelt es sich um eine Plattform zur Verwaltung der Abschlussprojekte von Studierenden der École Supérieure de Technologie (EST). Sie verfügt über eine Benutzerauthentifizierung und ein mehrstufiges Berechtigungssystem, das es Administratoren, Professoren und Studierenden ermöglicht, sich anzumelden, auf wichtige Informationen zuzugreifen und verschiedene Aufgaben auszuführen.",
           technologies: ["Laravel", "PHP", "Bootstrap", "jQuery", "MySQL"],
           links: [
             {
