@@ -279,4 +279,100 @@
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
+
+  /* Project Thumbnail */
+
+  .project-thumbnail {
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 12px;
+  }
+
+  .project-thumbnail::before {
+    position: absolute;
+    content: "";
+    top: -3%;
+    left: 50%;
+    width: 92%;
+    height: 92%;
+    transform: translate(-50%);
+    background: var(--primary);
+    opacity: 0.3;
+    z-index: 2;
+    transform-origin: bottom;
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .project-thumbnail::after {
+    position: absolute;
+    content: "";
+    top: -6%;
+    left: 50%;
+    width: 84%;
+    height: 84%;
+    transform: translate(-50%);
+    background: var(--primary);
+    opacity: 0.15;
+    z-index: 1;
+    transform-origin: bottom;
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .project-thumbnail img {
+    width: 300px;
+    height: 300px;
+    border-radius: inherit;
+    z-index: 3;
+    transition: all 0.3s ease;
+  }
+
+  .project-thumbnail:hover {
+    transform: translate(0px, -16px);
+  }
+
+  .project-thumbnail:hover::before {
+    rotate: -8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+
+  .project-thumbnail:hover::after {
+    rotate: 8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+  }
+
+  .project-thumbnail:hover img {
+    filter: blur(1px) brightness(0.7);
+    transition: all 0.3s ease;
+  }
+
+  .project-thumbnail-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    z-index: 5;
+  }
+
+  .project-thumbnail:hover .project-thumbnail-overlay {
+    opacity: 1;
+  }
 }
