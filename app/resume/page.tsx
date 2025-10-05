@@ -16,9 +16,9 @@ import {
 import PDFViewer from "@/components/pdf-viewer";
 
 const resumeUrls: Record<Language, string> = {
-  en: "/resume-en.pdf",
-  fr: "/resume-fr.pdf",
-  de: "/resume-de.pdf",
+  en: "/KHOUBAZ_YOUNES_RESUME_EN.pdf",
+  fr: "/KHOUBAZ_YOUNES_RESUME_FR.pdf",
+  de: "/KHOUBAZ_YOUNES_RESUME_DE.pdf",
 };
 
 export default function ResumePage() {
@@ -29,7 +29,7 @@ export default function ResumePage() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resumeUrls[selectedLang];
-    link.download = `KHOUBAZ_YOUNES_RESUME_${selectedLang.toUpperCase()}.pdf`;
+    link.download = resumeUrls[selectedLang].split("/")[1];
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
