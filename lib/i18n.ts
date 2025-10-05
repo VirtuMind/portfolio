@@ -19,8 +19,82 @@ export const translations = {
     },
     projects: {
       title: "Projects",
-      viewCode: "View Code",
       findMore: "Find out other projects",
+      works: [
+        {
+          id: 1,
+          title: "Coursify - Online Course Platform",
+          thumbnail: "/coursify/thumbnail.png",
+          description:
+            "Coursify is an online course platform designed for beginners to explore new subjects. Users can easily enroll in courses, track their progress, complete quizzes, and download important documents. With an intuitive, fully responsive and engaging interface, Coursify makes learning simple and accessible for everyone.",
+          technologies: [
+            ".NET 8",
+            "C#",
+            "React",
+            "Redux",
+            "JWT",
+            "SQL Server",
+            "Azure",
+          ],
+          links: [
+            {
+              type: "Frontend",
+              url: "https://github.com/VirtuMind/coursify-frontend",
+            },
+            {
+              type: "Backend",
+              url: "https://github.com/VirtuMind/coursify-backend",
+            },
+            { type: "Demo", url: "https://coursify.azurewebsites.net/" },
+          ],
+        },
+        {
+          id: 2,
+          title: "Online Travel Approval System",
+          thumbnail: "/otas/thumbnail.png",
+          description:
+            "Developed an Online Travel Approval System for Dicastal Morocco Africa, an administrative application that optimizes the management of business travel requests through multiple approval levels (department manager, HR, finance manager, CEO...). The system supports currency calculations in MAD and EUR, allows for approval, return, or rejection at each level, and generates a PDF document summarizing trip details and expenses with digital signatures. It also supports other request types each with tailored approval processes.",
+          technologies: [".NET 8", "C#", "React", "Redux", "JWT", "SQL Server"],
+          links: [
+            {
+              type: "Frontend",
+              url: "https://github.com/VirtuMind/otas-frontend",
+            },
+            {
+              type: "Backend",
+              url: "https://github.com/VirtuMind/otas-backend",
+            },
+          ],
+        },
+        {
+          id: 3,
+          title: "Resources Management System",
+          thumbnail: "/court-project/thumbnail.png",
+          description:
+            "In my previous role as an intern in the IT department of the Court of Appeal in Kénitra, I was tasked with developing and launching a new web application deployed on the court's local network, managing the human resources and office equipment provided by the government to increase efficiency in workflow and assist in decision making.",
+          technologies: ["Laravel", "PHP", "Bootstrap", "jQuery", "MySQL"],
+          links: [
+            {
+              type: "Source Code",
+              url: "https://github.com/VirtuMind/court-management-system",
+            },
+          ],
+        },
+        {
+          id: 4,
+          title: "Graduation Projects Management Platform",
+          thumbnail: "/graduation-project/thumbnail.png",
+          description:
+            "For my graduation project, I developed a full-stack application. A platform that manages graduation projects of students of Ecole Supérieur de Technologie with user authentication and multiple permissions system, where the administrator, professors, and students can log in and access important information as well as perform various tasks.",
+          technologies: ["Laravel", "PHP", "Bootstrap", "jQuery", "MySQL"],
+          links: [
+            {
+              type: "Source Code",
+              url: "https://github.com/VirtuMind/graduation-theses-platform",
+            },
+          ],
+        },
+      ],
     },
     resume: {
       title: "Resume",
@@ -100,8 +174,82 @@ export const translations = {
     },
     projects: {
       title: "Projets",
-      viewCode: "Voir le code",
       findMore: "Découvrir d'autres projets",
+      works: [
+        {
+          id: 1,
+          title: "Coursify - Plateforme de cours en ligne",
+          thumbnail: "/coursify/thumbnail.png",
+          description:
+            "Coursify est une plateforme de cours en ligne conçue pour les débutants afin d'explorer de nouveaux sujets. Les utilisateurs peuvent facilement s'inscrire à des cours, suivre leur progression, passer des quiz et télécharger des documents importants. Avec une interface intuitive, entièrement responsive et attrayante, Coursify rend l'apprentissage simple et accessible pour tous.",
+          technologies: [
+            ".NET 8",
+            "C#",
+            "React",
+            "Redux",
+            "JWT",
+            "SQL Server",
+            "Azure",
+          ],
+          links: [
+            {
+              type: "Frontend",
+              url: "https://github.com/VirtuMind/coursify-frontend",
+            },
+            {
+              type: "Backend",
+              url: "https://github.com/VirtuMind/coursify-backend",
+            },
+            { type: "Demo", url: "https://coursify.azurewebsites.net/" },
+          ],
+        },
+        {
+          id: 2,
+          title: "Système de validation de voyage en ligne",
+          thumbnail: "/otas/thumbnail.png",
+          description:
+            "Développé un système de validation de voyage en ligne pour Dicastal Morocco Africa, une application administrative qui optimise la gestion des demandes de voyage d'affaires à travers plusieurs niveaux d'approbation (responsable de département, RH, responsable financier, PDG...). Le système supporte les calculs de devises en MAD et en EUR, permet l'approbation, le retour ou le rejet à chaque niveau, et génère un document PDF récapitulant les détails et les dépenses du voyage avec des signatures numériques. Il prend également en charge autre types de demandes chacun avec des processus d'approbation adaptés.",
+          technologies: [".NET 8", "C#", "React", "Redux", "JWT", "SQL Server"],
+          links: [
+            {
+              type: "Frontend",
+              url: "https://github.com/VirtuMind/otas-frontend",
+            },
+            {
+              type: "Backend",
+              url: "https://github.com/VirtuMind/otas-backend",
+            },
+          ],
+        },
+        {
+          id: 3,
+          title: "Système de gestion des ressources",
+          thumbnail: "/court-project/thumbnail.png",
+          description:
+            "Dans mon précédent rôle en tant que stagiaire au sein du département informatique de la Cour d'Appel de Kénitra, j'ai été chargé de développer et de lancer une nouvelle application web déployée sur le réseau local de la cour, gérant les ressources humaines et matériels fournis par le gouvernement pour augmenter l'efficacité du flux de travail et aider à la prise de décision.",
+          technologies: ["Laravel", "PHP", "Bootstrap", "jQuery", "MySQL"],
+          links: [
+            {
+              type: "Source Code",
+              url: "https://github.com/VirtuMind/court-management-system",
+            },
+          ],
+        },
+        {
+          id: 4,
+          title: "Plateforme de gestion des projets de fin d'études",
+          thumbnail: "/graduation-project/thumbnail.png",
+          description:
+            "Pour mon projet de fin d'études, j'ai développé une application full-stack. Une plateforme qui gère les projets de fin d'études des étudiants de l'Ecole Supérieur de Technologie avec une authentification utilisateur et un système de permissions multiples, où l'administrateur, les professeurs et les étudiants peuvent se connecter et accéder à des informations importantes ainsi qu'effectuer diverses tâches.",
+          technologies: ["Laravel", "PHP", "Bootstrap", "jQuery", "MySQL"],
+          links: [
+            {
+              type: "Source Code",
+              url: "https://github.com/VirtuMind/graduation-theses-platform",
+            },
+          ],
+        },
+      ],
     },
     resume: {
       title: "CV",
@@ -181,8 +329,82 @@ export const translations = {
     },
     projects: {
       title: "Projekte",
-      viewCode: "Code ansehen",
       findMore: "Weitere Projekte entdecken",
+      works: [
+        {
+          id: 1,
+          title: "Coursify - Online-Kursplattform",
+          thumbnail: "/coursify/thumbnail.png",
+          description:
+            "Coursify ist eine Online-Kursplattform, die für Anfänger entwickelt wurde, um neue Themen zu erkunden. Benutzer können sich einfach für Kurse einschreiben, ihren Fortschritt verfolgen, Quizze absolvieren und wichtige Dokumente herunterladen. Mit einer intuitiven, vollständig responsiven und ansprechenden Benutzeroberfläche macht Coursify das Lernen einfach und für jeden zugänglich.",
+          technologies: [
+            ".NET 8",
+            "C#",
+            "React",
+            "Redux",
+            "JWT",
+            "SQL Server",
+            "Azure",
+          ],
+          links: [
+            {
+              type: "Frontend",
+              url: "https://github.com/VirtuMind/coursify-frontend",
+            },
+            {
+              type: "Backend",
+              url: "https://github.com/VirtuMind/coursify-backend",
+            },
+            { type: "Demo", url: "https://coursify.azurewebsites.net/" },
+          ],
+        },
+        {
+          id: 2,
+          title: "Online Travel Approval System",
+          thumbnail: "/otas/thumbnail.png",
+          description:
+            "Für Dicastal Morocco Africa wurde ein Online-Reisezustimmungssystem entwickelt, eine administrative Anwendung, die die Verwaltung von Geschäftsreiseanfragen durch mehrere Genehmigungsstufen optimiert (Abteilungsleiter, HR, Finanzleiter, CEO...). Das System unterstützt Währungsberechnungen in MAD und EUR, ermöglicht die Genehmigung, Rücksendung oder Ablehnung auf jeder Ebene und generiert ein PDF-Dokument, das Reisedetails und Ausgaben mit digitalen Signaturen zusammenfasst. Es unterstützt auch andere Arten von Anträgen mit jeweils angepassten Genehmigungsprozessen.",
+          technologies: [".NET 8", "C#", "React", "Redux", "JWT", "SQL Server"],
+          links: [
+            {
+              type: "Frontend",
+              url: "https://github.com/VirtuMind/otas-frontend",
+            },
+            {
+              type: "Backend",
+              url: "https://github.com/VirtuMind/otas-backend",
+            },
+          ],
+        },
+        {
+          id: 3,
+          title: "Ressourcenverwaltungssystem",
+          thumbnail: "/court-project/thumbnail.png",
+          description:
+            "In meiner früheren Rolle als Praktikant in der IT-Abteilung des Berufungsgerichts in Kénitra, ich damit beauftragt, eine neue Webanwendung zu entwickeln und einzuführen, die im lokalen Netzwerk des Gerichts bereitgestellt wird, die Personalressourcen und bereitgestellten Bürogeräte von der Regierung verwaltet, um die Effizienz im Arbeitsablauf zu steigern und bei der Entscheidungsfindung zu helfen.",
+          technologies: ["Laravel", "PHP", "Bootstrap", "jQuery", "MySQL"],
+          links: [
+            {
+              type: "Source Code",
+              url: "https://github.com/VirtuMind/court-management-system",
+            },
+          ],
+        },
+        {
+          id: 4,
+          title: "Platform für die Verwaltung der Diplomarbeiten",
+          thumbnail: "/graduation-project/thumbnail.png",
+          description:
+            "Für mein Abschlussprojekt habe ich eine Full-Stack-Anwendung entwickelt. Eine Plattform, die Projekte des Studienabschlusses von Studenten der Ecole Supérieur de Technologie mit Benutzerauthentifizierung und Mehrere Berechtigungen System verwaltet, bei der sich der Administrator, die Professoren und die Studenten anmelden und auf wichtige Informationen zugreifen sowie verschiedene Aufgaben ausführen können.",
+          technologies: ["Laravel", "PHP", "Bootstrap", "jQuery", "MySQL"],
+          links: [
+            {
+              type: "Source Code",
+              url: "https://github.com/VirtuMind/graduation-theses-platform",
+            },
+          ],
+        },
+      ],
     },
     resume: {
       title: "Lebenslauf",
