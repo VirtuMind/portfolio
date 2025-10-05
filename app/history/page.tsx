@@ -10,7 +10,7 @@ export default function HistoryPage() {
   const t = getTranslations(language);
 
   return (
-    <>
+    <div className="container max-w-3xl mx-auto">
       <BackLink />
       <h1 className="font-mono text-4xl mb-12">{t.history.title}</h1>
       {/* Timeline */}
@@ -26,6 +26,6 @@ export default function HistoryPage() {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }
