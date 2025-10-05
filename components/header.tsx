@@ -34,7 +34,7 @@ export function Header() {
   return (
     <>
       <header>
-        <div className="container mx-auto px-4">
+        <div className="font-mono container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center">
