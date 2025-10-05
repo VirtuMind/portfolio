@@ -5,7 +5,6 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/lib/theme-provider";
 import { LanguageProvider } from "@/lib/language-provider";
 import { Header } from "@/components/header";
-
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",
@@ -28,6 +27,20 @@ const ephesis = Ephesis({
 export const metadata: Metadata = {
   title: "Younes Khoubaz - Portfolio",
   description: "Software Developer Portfolio",
+  icons: {
+    icon: [
+      {
+        rel: "icon",
+        url: "/favicon-black.ico",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-white.ico",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -44,7 +57,9 @@ export default function RootLayout({
           <LanguageProvider>
             <div className="min-h-screen">
               <Header />
-              <main className="px-4 py-12 mb-30 md:mb-0">{children}</main>
+              <main className="px-4 py-12 mb-30 md:mb-0  overflow-x-hidden">
+                {children}
+              </main>
             </div>
           </LanguageProvider>
         </ThemeProvider>
