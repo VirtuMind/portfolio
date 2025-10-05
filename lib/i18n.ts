@@ -100,6 +100,8 @@ export const translations = {
       title: "Resume",
       download: "Download Resume",
       selectLanguage: "Select Language",
+      loadingResume: "Loading the resume...",
+      failedLoad: "Failed to load the resume, please download it instead.",
     },
     notFound: {
       title: "404 - There is nothing to show here",
@@ -255,6 +257,9 @@ export const translations = {
       title: "CV",
       download: "Télécharger le CV",
       selectLanguage: "Sélectionner la langue",
+      loadingResume: "Chargement du CV...",
+      failedLoad:
+        "Échec du chargement du CV, veuillez le télécharger à la place.",
     },
     notFound: {
       title: "404 - Il n'y a rien à afficher ici",
@@ -410,6 +415,9 @@ export const translations = {
       title: "Lebenslauf",
       download: "Lebenslauf herunterladen",
       selectLanguage: "Sprache auswählen",
+      loadingResume: "Lebenslauf wird geladen...",
+      failedLoad:
+        "Fehler beim Laden des Lebenslaufs, bitte laden Sie ihn stattdessen herunter.",
     },
     notFound: {
       title: "404 - Hier gibt es nichts zu sehen",
