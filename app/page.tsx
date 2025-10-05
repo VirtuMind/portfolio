@@ -9,7 +9,7 @@ export default function Home() {
   const t = getTranslations(language);
 
   return (
-    <>
+    <div className="container max-w-3xl mx-auto">
       {/* <BackLink /> */}
 
       <h1 className="font-mono text-3xl md:text-4xl font-bold mb-4 text-balance">
@@ -49,6 +49,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

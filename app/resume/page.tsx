@@ -36,7 +36,7 @@ export default function ResumePage() {
   };
 
   return (
-    <>
+    <div className="container max-w-3xl mx-auto">
       <BackLink />
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8 ">
         <h1 className="font-mono text-4xl">{t.resume.title}</h1>
@@ -71,6 +71,6 @@ export default function ResumePage() {
       <div className="opacity-0 animate-slide-up">
         <PDFViewer pdfUrl={resumeUrls[selectedLang]} />
       </div>
-    </>
+    </div>
   );
 }

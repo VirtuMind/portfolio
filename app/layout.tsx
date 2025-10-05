@@ -44,9 +44,7 @@ export default function RootLayout({
           <LanguageProvider>
             <div className="min-h-screen">
               <Header />
-              <main className="container max-w-3xl mx-auto px-4 py-12 mb-30 md:mb-0">
-                {children}
-              </main>
+              <main className="px-4 py-12 mb-30 md:mb-0">{children}</main>
             </div>
           </LanguageProvider>
         </ThemeProvider>

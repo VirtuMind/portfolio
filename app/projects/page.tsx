@@ -14,7 +14,7 @@ export default function ProjectsPage() {
   const t = getTranslations(language);
 
   return (
-    <main className="container max-w-4xl mx-auto px-4 pt-12 pb-16 opacity-0 animate-slide-up">
+    <div className="container max-w-5xl mx-auto">
       <BackLink />
       <h1 className="font-mono text-4xl md:text-4xl mb-12">
         {t.projects.title}
