@@ -13,14 +13,16 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import PDFViewer from "@/components/pdf-viewer";
+import dynamic from "next/dynamic";
 
 const resumeUrls: Record<Language, string> = {
   en: "/KHOUBAZ_YOUNES_RESUME_EN.pdf",
   fr: "/KHOUBAZ_YOUNES_RESUME_FR.pdf",
   de: "/KHOUBAZ_YOUNES_RESUME_DE.pdf",
 };
-
+const PDFViewer = dynamic(() => import("@/components/pdf-viewer"), {
+  ssr: false,
+});
 export default function ResumePage() {
   const { language } = useLanguage();
   const t = getTranslations(language);
