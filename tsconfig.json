@@ -1,22 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "ESNext"],
-    "jsx": "react-jsx",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "esModuleInterop": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "target": "ES6",
     "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "baseUrl": ".",
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      "@/*": ["src/*"],
-      "/assets/*": ["public/assets/*"]
+      "@/*": ["./*"]
     }
   },
-  "include": ["src", "vite.config.ts", "custom.d.ts"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
