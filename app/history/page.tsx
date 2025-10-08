@@ -3,7 +3,7 @@
 import { BackLink } from "@/components/back-link";
 import { TimelineEvent } from "@/components/timeline-event";
 import { useLanguage } from "@/lib/language-provider";
-import { getTranslations } from "@/lib/i18n";
+import { getTranslations } from "@/lib/translations";
 
 export default function HistoryPage() {
   const { language } = useLanguage();

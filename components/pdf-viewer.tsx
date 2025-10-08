@@ -1,5 +1,5 @@
 "use client";
-import { getTranslations } from "@/lib/i18n";
+import { getTranslations } from "@/lib/translations";
 import { useLanguage } from "@/lib/language-provider";
 import { useState, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";

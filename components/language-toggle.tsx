@@ -2,7 +2,7 @@
 
 import { Languages } from "lucide-react";
 import { useLanguage } from "@/lib/language-provider";
-import type { Language } from "@/lib/i18n";
+import type { Language } from "@/lib/translations";
 import {
   DropdownMenu,
   DropdownMenuContent,

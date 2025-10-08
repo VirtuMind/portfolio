@@ -6,7 +6,7 @@ import { AnimatedLogo } from "./animated-logo";
 import { ThemeToggle } from "./theme-toggle";
 import { LanguageToggle } from "./language-toggle";
 import { useLanguage } from "@/lib/language-provider";
-import { getTranslations } from "@/lib/i18n";
+import { getTranslations } from "@/lib/translations";
 import { HeaderIcon, NavIcon } from "./navbar-icons";
 
 const socialLinks = [

@@ -2,7 +2,7 @@
 
 import { BackLink } from "@/components/back-link";
 import { useLanguage } from "@/lib/language-provider";
-import { getTranslations } from "@/lib/i18n";
+import { getTranslations } from "@/lib/translations";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FiExternalLink } from "react-icons/fi";

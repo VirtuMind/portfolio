@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Download } from "lucide-react";
 import { BackLink } from "@/components/back-link";
 import { useLanguage } from "@/lib/language-provider";
-import { getTranslations, type Language } from "@/lib/i18n";
+import { getTranslations, type Language } from "@/lib/translations";
 import { Button } from "@/components/ui/button";
 import {
   Select,

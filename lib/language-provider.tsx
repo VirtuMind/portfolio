@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import type { Language } from "./i18n";
+import type { Language } from "./translations";
 
 type LanguageContextType = {
   language: Language;

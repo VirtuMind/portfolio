@@ -1,7 +1,7 @@
 "use client";
 import { BackLink } from "@/components/back-link";
 import { Header } from "@/components/header";
-import { getTranslations } from "@/lib/i18n";
+import { getTranslations } from "@/lib/translations";
 import { useLanguage } from "@/lib/language-provider";
 
 export default function Home() {
