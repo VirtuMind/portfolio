@@ -35,8 +35,8 @@ export default function ProjectsPage() {
   const projectImagesMap: Record<number, Project[]> = {
     1: coursifyImages,
     2: otasImages,
-    3: graduationProjectImages,
-    4: courtProjectImages,
+    3: courtProjectImages,
+    4: graduationProjectImages,
   };
 
   const openGallery = (projectId: number) => {
