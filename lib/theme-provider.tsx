@@ -20,7 +20,7 @@ const ThemeContext = React.createContext<ThemeContextType | undefined>(
 
 export function ThemeProvider({
   children,
-  defaultTheme = "dark",
+  defaultTheme = "light",
 }: ThemeProviderProps) {
   const [theme, setTheme] = React.useState<Theme>(defaultTheme);
   const [mounted, setMounted] = React.useState(false);
