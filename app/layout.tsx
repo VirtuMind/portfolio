@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/lib/theme-provider";
 import { Header } from "@/components/header";
 import { getLanguage } from "@/lib/cookies";
+import LightRays from "@/components/LightRays";
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",
@@ -58,6 +59,39 @@ export default async function RootLayout({
       <body className="font-sans antialiased">
         <ThemeProvider>
           <div className="min-h-screen">
+            <div className="fixed inset-0 w-full h-full pointer-events-none hidden dark:block">
+              {/* Desktop */}
+              <div className="hidden md:block">
+                <LightRays
+                  raysOrigin="left"
+                  raysColor="#ffffff"
+                  raysSpeed={1.5}
+                  lightSpread={0.8}
+                  rayLength={1.2}
+                  followMouse={true}
+                  mouseInfluence={0.1}
+                  noiseAmount={0.1}
+                  distortion={0.05}
+                  className="custom-rays"
+                />
+              </div>
+              {/* Mobile */}
+              <div className="block md:hidden">
+                <LightRays
+                  raysOrigin="top-center"
+                  raysColor="#ffffff"
+                  raysSpeed={1.5}
+                  lightSpread={0.8}
+                  rayLength={1.2}
+                  followMouse={true}
+                  mouseInfluence={0.1}
+                  noiseAmount={0.1}
+                  distortion={0.05}
+                  className="custom-rays"
+                />
+              </div>
+            </div>
+
             <Header language={language} />
             <main className="px-4 py-12 mb-30 md:mb-0  overflow-x-hidden">
               {children}
