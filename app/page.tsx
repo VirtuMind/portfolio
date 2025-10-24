@@ -1,11 +1,8 @@
-"use client";
-import { BackLink } from "@/components/back-link";
-import { Header } from "@/components/header";
 import { getTranslations } from "@/lib/translations";
-import { useLanguage } from "@/lib/language-provider";
+import { getLanguage } from "@/lib/cookies";
 
-export default function Home() {
-  const { language } = useLanguage();
+export default async function Home() {
+  const language = await getLanguage();
   const t = getTranslations(language);
 
   return (

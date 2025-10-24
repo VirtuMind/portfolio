@@ -1,12 +1,10 @@
-"use client";
-
 import { BackLink } from "@/components/back-link";
 import { TimelineEvent } from "@/components/timeline-event";
-import { useLanguage } from "@/lib/language-provider";
+import { getLanguage } from "@/lib/cookies";
 import { getTranslations } from "@/lib/translations";
 
-export default function HistoryPage() {
-  const { language } = useLanguage();
+export default async function HistoryPage() {
+  const language = await getLanguage();
   const t = getTranslations(language);
 
   return (

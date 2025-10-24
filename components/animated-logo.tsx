@@ -1,5 +1,3 @@
-"use client";
-
 export function AnimatedLogo() {
   return (
     <div className="relative text-2xl">

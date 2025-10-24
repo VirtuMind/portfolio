@@ -1,7 +1,4 @@
-"use client";
-
 import { Languages } from "lucide-react";
-import { useLanguage } from "@/lib/language-provider";
 import type { Language } from "@/lib/translations";
 import {
   DropdownMenu,
@@ -9,6 +6,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { setLanguageCookie } from "@/lib/cookies";
 
 const languages: { code: Language; label: string }[] = [
   { code: "en", label: "English" },
@@ -16,8 +14,14 @@ const languages: { code: Language; label: string }[] = [
   { code: "de", label: "Deutsch" },
 ];
 
-export function LanguageToggle() {
-  const { language, setLanguage } = useLanguage();
+type Props = {
+  currentLanguage: Language;
+};
+
+export function LanguageToggle({ currentLanguage }: Props) {
+  const handleLanguageChange = async (newLanguage: Language) => {
+    await setLanguageCookie(newLanguage);
+  };
 
   return (
     <DropdownMenu>
@@ -33,8 +37,8 @@ export function LanguageToggle() {
         {languages.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
-            onClick={() => setLanguage(lang.code)}
-            className={language === lang.code ? "bg-accent/20" : ""}
+            onClick={() => handleLanguageChange(lang.code)}
+            className={currentLanguage === lang.code ? "bg-accent/20" : ""}
           >
             {lang.label}
           </DropdownMenuItem>

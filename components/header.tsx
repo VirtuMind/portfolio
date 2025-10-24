@@ -5,8 +5,7 @@ import { usePathname } from "next/navigation";
 import { AnimatedLogo } from "./animated-logo";
 import { ThemeToggle } from "./theme-toggle";
 import { LanguageToggle } from "./language-toggle";
-import { useLanguage } from "@/lib/language-provider";
-import { getTranslations } from "@/lib/translations";
+import { getTranslations, type Language } from "@/lib/translations";
 import { HeaderIcon, NavIcon } from "./navbar-icons";
 
 const socialLinks = [
@@ -19,9 +18,12 @@ const socialLinks = [
   { name: "twitter", href: "https://x.com/VirtuoMind", label: "X (Twitter)" },
 ];
 
-export function Header() {
+type Props = {
+  language: Language;
+};
+
+export function Header({ language }: Props) {
   const pathname = usePathname();
-  const { language } = useLanguage();
   const t = getTranslations(language);
 
   const navLinks = [
@@ -77,7 +79,7 @@ export function Header() {
               </div>
 
               <div className="flex items-center gap-2 ml-2 pl-2 border-l border-border">
-                <LanguageToggle />
+                <LanguageToggle currentLanguage={language} />
                 <ThemeToggle />
               </div>
             </div>

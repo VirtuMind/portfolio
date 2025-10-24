@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { DM_Sans, Space_Grotesk, Ephesis } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/lib/theme-provider";
-import { LanguageProvider } from "@/lib/language-provider";
 import { Header } from "@/components/header";
+import { getLanguage } from "@/lib/cookies";
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",
@@ -43,25 +43,26 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const language = await getLanguage();
+
   return (
     <html
+      lang={language}
       className={`${dmSans.variable} ${spaceGrotesk.variable} ${ephesis.variable}`}
     >
       <body className="font-sans antialiased">
         <ThemeProvider>
-          <LanguageProvider>
-            <div className="min-h-screen">
-              <Header />
-              <main className="px-4 py-12 mb-30 md:mb-0  overflow-x-hidden">
-                {children}
-              </main>
-            </div>
-          </LanguageProvider>
+          <div className="min-h-screen">
+            <Header language={language} />
+            <main className="px-4 py-12 mb-30 md:mb-0  overflow-x-hidden">
+              {children}
+            </main>
+          </div>
         </ThemeProvider>
       </body>
     </html>

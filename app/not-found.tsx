@@ -1,11 +1,9 @@
-"use client";
-
 import { BackLink } from "@/components/back-link";
 import { getTranslations } from "@/lib/translations";
-import { useLanguage } from "@/lib/language-provider";
+import { getLanguage } from "@/lib/cookies";
 
-const NotFound = () => {
-  const { language } = useLanguage();
+const NotFound = async () => {
+  const language = await getLanguage();
   const t = getTranslations(language);
   return (
     <div className="container max-w-3xl mx-auto">

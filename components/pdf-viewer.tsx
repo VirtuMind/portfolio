@@ -1,6 +1,5 @@
 "use client";
-import { getTranslations } from "@/lib/translations";
-import { useLanguage } from "@/lib/language-provider";
+import { getTranslations, type Language } from "@/lib/translations";
 import { useState, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
@@ -8,9 +7,13 @@ import "react-pdf/dist/Page/TextLayer.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
-export default function PDFViewer({ pdfUrl }: { pdfUrl: string }) {
+type Props = {
+  pdfUrl: string;
+  language: Language;
+};
+
+export default function PDFViewer({ pdfUrl, language }: Props) {
   const [pageWidth, setPageWidth] = useState<number>(0);
-  const { language } = useLanguage();
   const t = getTranslations(language);
 
   // We have to measure the container width in pixels because it is required by <Page />

@@ -1,18 +1,11 @@
-"use client";
-
 import { BackLink } from "@/components/back-link";
-import { useLanguage } from "@/lib/language-provider";
+import { getLanguage } from "@/lib/cookies";
 import { getTranslations } from "@/lib/translations";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FiExternalLink } from "react-icons/fi";
-import { BsImages } from "react-icons/bs";
 import { FaCode } from "react-icons/fa6";
 import { MdLiveTv } from "react-icons/md";
-
-import Image from "next/image";
-import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
-import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import {
   coursifyImages,
   otasImages,
@@ -20,9 +13,10 @@ import {
   courtProjectImages,
   type Project,
 } from "@/lib/projects-images";
+import { ProjectGallery } from "@/components/project-gallery";
 
-export default function ProjectsPage() {
-  const { language } = useLanguage();
+export default async function ProjectsPage() {
+  const language = await getLanguage();
   const t = getTranslations(language);
 
   const buttonIcons: Record<string, JSX.Element> = {
@@ -39,18 +33,6 @@ export default function ProjectsPage() {
     4: graduationProjectImages,
   };
 
-  const openGallery = (projectId: number) => {
-    const images = projectImagesMap[projectId] || [];
-
-    Fancybox.show(images, {
-      Carousel: {
-        Thumbs: {
-          showOnStart: false,
-        },
-      },
-    });
-  };
-
   return (
     <div className="container max-w-5xl mx-auto">
       <BackLink />
@@ -64,22 +46,12 @@ export default function ProjectsPage() {
           >
             <div className="flex flex-col md:flex-row gap-4">
               {/* Image Section with Gallery Effect */}
-              <div className="relative w-full md:w-2/5 lg:w-1/3 flex items-center justify-center p-4 ">
-                <div
-                  className="project-thumbnail aspect-square"
-                  onClick={() => openGallery(project.id)}
-                >
-                  <Image
-                    src={project.thumbnail}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="project-thumbnail-overlay">
-                    <BsImages className="text-white h-12 w-12" />
-                  </div>
-                </div>
-              </div>
+              <ProjectGallery
+                projectId={project.id}
+                thumbnail={project.thumbnail}
+                title={project.title}
+                images={projectImagesMap[project.id] || []}
+              />
 
               {/* Content Section */}
               <div className="flex-1 p-4 flex flex-col justify-between">
