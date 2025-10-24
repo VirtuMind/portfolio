@@ -7,6 +7,7 @@ import { ThemeToggle } from "./theme-toggle";
 import { LanguageToggle } from "./language-toggle";
 import { getTranslations, type Language } from "@/lib/translations";
 import { HeaderIcon, NavIcon } from "./navbar-icons";
+import GlassSurface from "@/components/GlassSurface";
 
 const socialLinks = [
   { name: "github", href: "https://github.com/VirtuMind", label: "GitHub" },
@@ -88,23 +89,34 @@ export function Header({ language }: Props) {
       </header>
 
       {/* Mobile Navigation */}
-      <nav className="md:hidden fixed bottom-4 left-4 right-4 z-50 glass rounded-2xl shadow-lg">
-        <div className="flex items-center justify-around h-16 px-2">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`p-3 cursor-pointer transition-colors rounded-xl ${
-                pathname === link.href
-                  ? "text-accent bg-accent/10"
-                  : "hover:text-accent"
-              }`}
-              aria-label={link.label}
-            >
-              <NavIcon href={link.href} />
-            </Link>
-          ))}
-        </div>
+      <nav className="md:hidden fixed bottom-4 left-4 right-4 z-50 ">
+        <GlassSurface
+          borderRadius={17}
+          height={70}
+          opacity={0.93}
+          backgroundOpacity={0.1}
+          saturation={1}
+          displace={0.5}
+          width="100%"
+          className="flex items-center"
+        >
+          <div className="flex items-center justify-around h-16 px-2 w-full">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`p-3 cursor-pointer transition-colors rounded-xl ${
+                  pathname === link.href
+                    ? "text-accent bg-accent/10"
+                    : "hover:text-accent"
+                }`}
+                aria-label={link.label}
+              >
+                <NavIcon href={link.href} />
+              </Link>
+            ))}
+          </div>
+        </GlassSurface>
       </nav>
     </>
   );

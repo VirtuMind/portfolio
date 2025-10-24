@@ -61,35 +61,29 @@ export default async function RootLayout({
           <div className="min-h-screen">
             <div className="fixed inset-0 w-full h-full pointer-events-none hidden dark:block">
               {/* Desktop */}
-              <div className="hidden md:block">
-                <LightRays
-                  raysOrigin="left"
-                  raysColor="#ffffff"
-                  raysSpeed={1.5}
-                  lightSpread={0.8}
-                  rayLength={1.2}
-                  followMouse={true}
-                  mouseInfluence={0.1}
-                  noiseAmount={0.1}
-                  distortion={0.05}
-                  className="custom-rays"
-                />
-              </div>
+              <LightRays
+                raysOrigin="left"
+                raysColor="#fff"
+                raysSpeed={1.5}
+                lightSpread={1.5}
+                rayLength={1.5}
+                followMouse={true}
+                mouseInfluence={0.5}
+                fadeDistance={1}
+                noiseAmount={0.1}
+                className="custom-rays hidden md:block"
+              />
               {/* Mobile */}
-              <div className="block md:hidden">
-                <LightRays
-                  raysOrigin="top-center"
-                  raysColor="#ffffff"
-                  raysSpeed={1.5}
-                  lightSpread={0.8}
-                  rayLength={1.2}
-                  followMouse={true}
-                  mouseInfluence={0.1}
-                  noiseAmount={0.1}
-                  distortion={0.05}
-                  className="custom-rays"
-                />
-              </div>
+              <LightRays
+                raysOrigin="top-center"
+                raysColor="#fff"
+                raysSpeed={1.3}
+                lightSpread={1.5}
+                rayLength={5}
+                followMouse={false}
+                fadeDistance={0.8}
+                className="custom-rays block md:hidden"
+              />
             </div>
 
             <Header language={language} />
