@@ -1,6 +1,15 @@
 import { getTranslations } from "@/lib/translations";
 import { getLanguage } from "@/lib/cookies";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  description: "Get to know Younes Khoubaz",
+  openGraph: {
+    title: "Younes Khoubaz - Software Developer",
+    description: "Get to know Younes Khoubaz",
+  },
+};
 
 export default async function Home() {
   const language = await getLanguage();

@@ -14,6 +14,16 @@ import {
   type Project,
 } from "@/lib/projects-images";
 import { ProjectGallery } from "@/components/project-gallery";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Portfolio of projects",
+  openGraph: {
+    title: "Projects | Younes Khoubaz",
+    description: "Portfolio of projects",
+  },
+};
 
 export default async function ProjectsPage() {
   const language = await getLanguage();

@@ -2,6 +2,18 @@ import { BackLink } from "@/components/back-link";
 import { TimelineEvent } from "@/components/timeline-event";
 import { getLanguage } from "@/lib/cookies";
 import { getTranslations } from "@/lib/translations";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "History",
+  description:
+    "Professional journey and work experience of Younes Khoubaz - career timeline.",
+  openGraph: {
+    title: "History | Younes Khoubaz",
+    description:
+      "Professional journey and work experience of Younes Khoubaz - career timeline.",
+  },
+};
 
 export default async function HistoryPage() {
   const language = await getLanguage();
