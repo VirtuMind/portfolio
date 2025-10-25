@@ -1,5 +1,6 @@
 import { getTranslations } from "@/lib/translations";
 import { getLanguage } from "@/lib/cookies";
+import Link from "next/link";
 
 export default async function Home() {
   const language = await getLanguage();
@@ -22,27 +23,27 @@ export default async function Home() {
           <p>{t.about.paragraph2}</p>
         </div>
 
-        <div className="mt-12  space-y-4">
+        <div className="mt-12 space-y-4">
           <p>
             {t.about.findMe}{" "}
-            <a
+            <Link
               href="https://x.com/VirtuoMind"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-accent hover:underline font-medium transition-colors cursor-pointer"
+              className="text-accent font-semibold underline decoration-1.5 underline-offset-4 hover:decoration-primary/80 decoration-primary/50 transition-all cursor-pointer"
             >
               @VirtuoMind
-            </a>
+            </Link>
           </p>
 
           <p>
             {t.about.email}{" "}
-            <a
+            <Link
               href="mailto:younes.khoubaz@gmail.com"
-              className="text-accent hover:underline font-medium transition-colors cursor-pointer"
+              className="text-accent font-semibold underline decoration-1.5 underline-offset-4 hover:decoration-primary/80 decoration-primary/50 transition-all cursor-pointer"
             >
               younes.khoubaz@gmail.com
-            </a>
+            </Link>
           </p>
         </div>
       </div>
