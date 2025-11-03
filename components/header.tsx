@@ -94,7 +94,7 @@ export function Header({ language }: Props) {
           borderRadius={17}
           height={70}
           opacity={0.93}
-          backgroundOpacity={0.1}
+          backgroundOpacity={0.01}
           saturation={1}
           displace={0.5}
           width="100%"
