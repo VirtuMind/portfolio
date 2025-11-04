@@ -1,9 +1,15 @@
-export interface Project {
+export interface ProjectImage {
   src: string;
   caption?: string;
 }
 
-export const coursifyImages: Project[] = [
+export const astralisImages: ProjectImage[] = [
+  { src: "/astralis/1.png" },
+  { src: "/astralis/2.png" },
+  { src: "/astralis/3.png" },
+];
+
+export const coursifyImages: ProjectImage[] = [
   { src: "/coursify/1.png" },
   { src: "/coursify/2.png" },
   { src: "/coursify/3.png" },
@@ -29,7 +35,7 @@ export const coursifyImages: Project[] = [
   { src: "/coursify/23.png" },
 ];
 
-export const otasImages: Project[] = [
+export const otasImages: ProjectImage[] = [
   { src: "/otas/1.png" },
   { src: "/otas/2.png" },
   { src: "/otas/3.png" },
@@ -86,7 +92,7 @@ export const otasImages: Project[] = [
   { src: "/otas/54.png" },
 ];
 
-export const graduationProjectImages: Project[] = [
+export const graduationProjectImages: ProjectImage[] = [
   { src: "/graduation-project/1.jpeg" },
   { src: "/graduation-project/2.jpeg" },
   { src: "/graduation-project/2.2.jpeg" },
@@ -114,7 +120,7 @@ export const graduationProjectImages: Project[] = [
   { src: "/graduation-project/16.png" },
 ];
 
-export const courtProjectImages: Project[] = [
+export const courtProjectImages: ProjectImage[] = [
   { src: "/court-project/1.jpeg" },
   { src: "/court-project/2.jpeg" },
   { src: "/court-project/3.jpeg" },

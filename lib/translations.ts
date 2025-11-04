@@ -23,6 +23,21 @@ export const translations = {
       works: [
         {
           id: 1,
+          title: "Astralis - Scroll through the cosmos",
+          thumbnail: "/astralis/thumbnail.png",
+          description:
+            "I built Astralis to create an easier way to explore the universe by transforming NASA's Open APIs into an immersive visual experience. Astralis is a window into the cosmos, bringing NASA's vast collection of space imagery to your fingertip. From stunning astronomy pictures to real-time Earth observations. Astralis makes exploring the universe as simple as a swipe.",
+          technologies: ["Next.js", "Typescript", "React", "Tailwind CSS"],
+          links: [
+            {
+              type: "Source Code",
+              url: "https://github.com/VirtuMind/astralis",
+            },
+            { type: "Demo", url: "https://astralis.khoubaz.com" },
+          ],
+        },
+        {
+          id: 2,
           title: "Coursify - Online Course Platform",
           thumbnail: "/coursify/thumbnail.png",
           description:
@@ -47,9 +62,10 @@ export const translations = {
             },
             { type: "Demo", url: "https://coursify.azurewebsites.net/" },
           ],
+          note: "The website is currently down due to ongoing dispute with Azure cloud services.",
         },
         {
-          id: 2,
+          id: 3,
           title: "Online Travel Approval System",
           thumbnail: "/otas/thumbnail.png",
           description:
@@ -67,7 +83,7 @@ export const translations = {
           ],
         },
         {
-          id: 3,
+          id: 4,
           title: "Resources Management System",
           thumbnail: "/court-project/thumbnail.png",
           description:
@@ -81,7 +97,7 @@ export const translations = {
           ],
         },
         {
-          id: 4,
+          id: 5,
           title: "Graduation Projects Management Platform",
           thumbnail: "/graduation-project/thumbnail.png",
           description:
@@ -180,6 +196,21 @@ export const translations = {
       works: [
         {
           id: 1,
+          title: "Astralis - Parcourez le cosmos",
+          thumbnail: "/astralis/thumbnail.png",
+          description:
+            "J'ai créé Astralis pour faciliter l'exploration de l'univers en transformant les API ouvertes de la NASA en une expérience visuelle immersive. Astralis est une fenêtre sur le cosmos, apportant la vaste collection d'images spatiales de la NASA à portée de main. Des images astronomiques époustouflantes aux observations de la Terre en temps réel. Astralis rend l'exploration de l'univers aussi simple qu'un glissement de doigt.",
+          technologies: ["Next.js", "Typescript", "React", "Tailwind CSS"],
+          links: [
+            {
+              type: "Source Code",
+              url: "https://github.com/VirtuMind/astralis",
+            },
+            { type: "Demo", url: "https://astralis.khoubaz.com" },
+          ],
+        },
+        {
+          id: 2,
           title: "Coursify - Plateforme de cours en ligne",
           thumbnail: "/coursify/thumbnail.png",
           description:
@@ -207,7 +238,7 @@ export const translations = {
           note: "Le site web est actuellement hors ligne en raison d'un différend en cours avec les services cloud Azure.",
         },
         {
-          id: 2,
+          id: 3,
           title: "Système de validation de voyage en ligne",
           thumbnail: "/otas/thumbnail.png",
           description:
@@ -225,7 +256,7 @@ export const translations = {
           ],
         },
         {
-          id: 3,
+          id: 4,
           title: "Système de gestion des ressources",
           thumbnail: "/court-project/thumbnail.png",
           description:
@@ -239,7 +270,7 @@ export const translations = {
           ],
         },
         {
-          id: 4,
+          id: 5,
           title: "Plateforme de gestion des projets de fin d'études",
           thumbnail: "/graduation-project/thumbnail.png",
           description:
@@ -339,6 +370,21 @@ export const translations = {
       works: [
         {
           id: 1,
+          title: "Astralis - Durch den Kosmos scrollen",
+          thumbnail: "/astralis/thumbnail.png",
+          description:
+            "Ich habe Astralis entwickelt, um die Erkundung des Universums zu erleichtern, indem ich die offenen APIs der NASA in ein immersives visuelles Erlebnis verwandelt habe. Astralis ist ein Fenster in den Kosmos und bringt die umfangreiche Sammlung von Weltraumbildern der NASA auf Ihre Fingerspitzen. Von atemberaubenden Astronomiebildern bis hin zu Echtzeit-Erdbeobachtungen. Astralis macht die Erkundung des Universums so einfach wie ein Wischen.",
+          technologies: ["Next.js", "Typescript", "React", "Tailwind CSS"],
+          links: [
+            {
+              type: "Source Code",
+              url: "https://github.com/VirtuMind/astralis",
+            },
+            { type: "Demo", url: "https://astralis.khoubaz.com" },
+          ],
+        },
+        {
+          id: 2,
           title: "Coursify - Online-Kursplattform",
           thumbnail: "/coursify/thumbnail.png",
           description:
@@ -363,9 +409,10 @@ export const translations = {
             },
             { type: "Demo", url: "https://coursify.azurewebsites.net/" },
           ],
+          note: "Die Website ist derzeit aufgrund eines laufenden Streits mit Azure Cloud-Diensten nicht erreichbar.",
         },
         {
-          id: 2,
+          id: 3,
           title: "Online Travel Approval System",
           thumbnail: "/otas/thumbnail.png",
           description:
@@ -383,7 +430,7 @@ export const translations = {
           ],
         },
         {
-          id: 3,
+          id: 4,
           title: "Ressourcenverwaltungssystem",
           thumbnail: "/court-project/thumbnail.png",
           description:
@@ -397,7 +444,7 @@ export const translations = {
           ],
         },
         {
-          id: 4,
+          id: 5,
           title: "Platform für die Verwaltung der Diplomarbeiten",
           thumbnail: "/graduation-project/thumbnail.png",
           description:

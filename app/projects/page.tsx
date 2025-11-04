@@ -6,15 +6,19 @@ import { Button } from "@/components/ui/button";
 import { FiExternalLink } from "react-icons/fi";
 import { FaCode } from "react-icons/fa6";
 import { MdLiveTv } from "react-icons/md";
+import { TiInfoOutline } from "react-icons/ti";
+
 import {
   coursifyImages,
   otasImages,
   graduationProjectImages,
   courtProjectImages,
-  type Project,
+  type ProjectImage,
+  astralisImages,
 } from "@/lib/projects-images";
 import { ProjectGallery } from "@/components/project-gallery";
 import type { Metadata } from "next";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -36,11 +40,12 @@ export default async function ProjectsPage() {
     Demo: <MdLiveTv className="h-4 w-4" />,
   };
 
-  const projectImagesMap: Record<number, Project[]> = {
-    1: coursifyImages,
-    2: otasImages,
-    3: courtProjectImages,
-    4: graduationProjectImages,
+  const projectImagesMap: Record<number, ProjectImage[]> = {
+    1: astralisImages,
+    2: coursifyImages,
+    3: otasImages,
+    4: courtProjectImages,
+    5: graduationProjectImages,
   };
 
   return (
@@ -101,7 +106,6 @@ export default async function ProjectsPage() {
                 )}
 
                 {/* Action Buttons */}
-
                 <div className="flex flex-wrap gap-2 mt-4">
                   {project.links.map((link) => (
                     <a
