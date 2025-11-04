@@ -90,6 +90,16 @@ export default async function ProjectsPage() {
                   </div>
                 </div>
 
+                {/* Note Section if exists */}
+                {project.note && (
+                  <Alert className="mt-4 border-info/30 bg-info/5 hover:bg-info/10 text-info transition-colors">
+                    <TiInfoOutline className="h-4 w-4" />
+                    <AlertDescription className="text-sm text-info font-medium">
+                      {project.note}
+                    </AlertDescription>
+                  </Alert>
+                )}
+
                 {/* Action Buttons */}
 
                 <div className="flex flex-wrap gap-2 mt-4">

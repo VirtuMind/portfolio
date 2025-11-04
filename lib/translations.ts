@@ -204,6 +204,7 @@ export const translations = {
             },
             { type: "Demo", url: "https://coursify.azurewebsites.net/" },
           ],
+          note: "Le site web est actuellement hors ligne en raison d'un différend en cours avec les services cloud Azure.",
         },
         {
           id: 2,
