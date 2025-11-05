@@ -38,7 +38,7 @@ export function LightRaysBackground() {
           raysColor="#fff"
           raysSpeed={1.3}
           lightSpread={1.5}
-          rayLength={5}
+          rayLength={3}
           followMouse={false}
           fadeDistance={0.8}
           className="custom-rays"
