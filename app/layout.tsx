@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/lib/theme-provider";
 import { Header } from "@/components/header";
 import { getLanguage } from "@/lib/cookies";
 import { LightRaysBackground } from "@/components/light-rays-background";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",
@@ -115,6 +117,8 @@ export default async function RootLayout({
             </main>
           </div>
         </ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
